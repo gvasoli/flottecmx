@@ -74,6 +74,28 @@ var contenidoZinc = 0;
 var contenidoFierro = 0;
 var contenidoInsoluble = 0;
 
+var leyConcOro = 0;
+var leyConcPlata = 0;
+var leyConcPlomo = 0;
+var leyConcZinc = 0;
+var leyConcFierro = 0;
+var leyConcInsoluble = 0;
+
+var colaOro = 0;
+var colaPlata = 0;
+var colaZinc = 0;
+var colaFierro = 0;
+var colaInsoluble = 0;
+var colaPlomo = 0;
+
+var colaPlomoOro = 0;
+var colaPlomoPlata = 0;
+var colaPlomoZinc = 0;
+var colaPlomoFierro = 0;
+var colaPlomoInsoluble = 0;
+var colaPlomoPlomo = 0;
+
+
 
 
 //CALCULOS DE LA PLATA
@@ -243,6 +265,8 @@ var toneladasConcentrado = 0;
 var toneladasConcentradoUno = 0;
 var toneladasConcentradoDos = 0;
 var toneladasConcentradoTres = 0; 
+
+var toneladaCola = 0;
 
 var toneladaMineral = 0;
 var porcentajeSolidos = 0;  
@@ -718,7 +742,16 @@ function lineasActualesBases(){
     //CONTENIDOS DE PLOMO
     contenidosInsolubleConc = contenidosInsolubleCabeza * recuperacionInsoluble;
     contenidosInsolubleCola = contenidosInsolubleCabeza-contenidosInsolubleConc;
-    
+
+    //COLAS PLOMO
+    colaPlomoOro = (contenidosOroCola*1000)/toneladaCola;
+    colaPlomoPlata = (contenidosPlataCola*1000)/toneladaCola;
+    colaPlomoZinc = (contenidosZincCola*100)/toneladaCola;
+    colaPlomoFierro = (contenidosFierroCola*100)/toneladaCola;
+    colaPlomoInsoluble = (contenidosInsolubleCola*100)/toneladaCola;
+    colaPlomoPlomo = (contenidosPlomoCola*100)/toneladaCola;
+
+
     //alert(contenidosInsolubleConc);
     
 }
@@ -739,6 +772,12 @@ function valoresContenidos(){
     cabezaInsoluble = 69.32-(3.799*plomoCabeza);
     document.getElementById("txtCabezaInsoluble").value = cabezaInsoluble;
 
+    document.getElementById("txtCabezaPlomo").value = plomoCabeza;
+
+
+
+
+
 
     
     contenidoOro = ((cabezaOro*txtTonelajeDisabled)/1000);
@@ -747,6 +786,69 @@ function valoresContenidos(){
     contenidoZinc = ((cabezaZinc*txtTonelajeDisabled)/100);
     contenidoFierro = ((cabezaFierro*txtTonelajeDisabled)/100);
     contenidoInsoluble = ((cabezaInsoluble*txtTonelajeDisabled)/100);
+
+
+}
+
+function ensaye(){
+
+    txtVelocidadDerrame = document.getElementById("txtVelocidadDerrame").value;
+
+    if(toneladasConcentradoDos=0) {
+        leyConcOro = 0;
+        leyConcPlata = 0;
+        leyConcPlomo = 0;
+        leyConcZinc = 0;
+        leyConcFierro = 0;
+        leyConcInsoluble = 0;
+    } else {
+        leyConcOro = contenidosOroConc*1000/toneladasConcentradoUno;
+        leyConcPlata = contenidosPlataConc*1000/toneladasConcentradoUno;
+        leyConcPlomo = contenidosPlomoConc*100/toneladasConcentradoUno;
+        leyConcZinc = contenidosZincConc*100/toneladasConcentradoUno;
+        leyConcFierro = contenidosFierroConc*100/toneladasConcentradoUno;
+        leyConcInsoluble = contenidosInsolubleConc*100/toneladasConcentradoUno;
+    }
+
+
+
+    if (txtVelocidadDerrame = 0) {
+        colaOro = cabezaOro;
+    } else {
+        colaOro = colaPlomoOro;
+    }
+
+    if (velocidadDerrameDos = 0){
+        colaPlata = cabezaPlata;
+        colaPlomo = cabezaPlata;
+        colaZinc = cabezaPlata;
+        colaFierro = cabezaPlata;
+        colaInsoluble = cabezaPlata;
+    } else {
+        colaPlata = colaPlomoPlata;
+        colaPlomo = colaPlomoPlomo;
+        colaZinc = colaPlomoZinc;
+        colaFierro = colaPlomoFierro;
+        colaInsoluble = colaPlomoInsoluble;
+    }
+
+    
+    //alert(contenidosOroConc);
+    //print(contenidosOroConc);
+    document.getElementById("txtConcOro").value = leyConcOro;
+    document.getElementById("txtConcPlata").value = leyConcPlata;
+    document.getElementById("txtConcPlomo").value = leyConcPlomo;
+    document.getElementById("txtConcZinc").value = leyConcZinc;
+    document.getElementById("txtConcFierro").value = leyConcFierro;
+    document.getElementById("txtConcInsoluble").value = leyConcInsoluble;
+
+    document.getElementById("txtColaOro").value = colaOro;
+    document.getElementById("txtColaPlata").value = colaPlata;
+    document.getElementById("txtColaPlomo").value = colaPlomo;
+    document.getElementById("txtColaZinc").value = colaZinc;
+    document.getElementById("txtColaFierro").value = colaFierro;
+    document.getElementById("txtColaInsoluble").value = colaInsoluble;
+
 
 
 }
@@ -788,7 +890,7 @@ function variablesAlimentacion(){
     
 }
 
-
+var velocidadDerrameDos = 0;
 
 function variablesRespuesta(){
     /*txtColectorVR = (txtColectorVCDisabled*(60)*(txtColectorCR/100))/txtTonelaje;
@@ -810,6 +912,7 @@ function variablesRespuesta(){
     alturaCamaEspumante = -105-(408.3*txtNivelDisabled)+(1.734*txtColectorVR)+(1.83*txtEspumanteVR)+(173.3*txtVelocidadSuperficial)-(4.95*contenidoPlomo)-(535*Math.pow(txtNivelDisabled,2))-(0.0449*Math.pow(txtColectorVR,2))-(0.0059*Math.pow(txtEspumanteVR,2))-(60.3*Math.pow(txtVelocidadSuperficial,2))-(0.0503*Math.pow(contenidoPlomo,2))+((5.99)*(txtNivelDisabled)*(txtColectorVR))-((6.06)*(txtNivelDisabled)*(txtEspumanteVR))+((403)*(txtNivelDisabled)*(txtVelocidadSuperficial))-((11.13)*(txtNivelDisabled)*(contenidoPlomo))+((0.0493)*(txtColectorVR)*(txtEspumanteVR))-((2.5)*(txtEspumanteVR)*(txtVelocidadSuperficial))+((0.0113)*(txtEspumanteVR)*(contenidoPlomo))+((4.63)*(txtVelocidadSuperficial)*(contenidoPlomo));
     //document.getElementById("alturaCamaEspumante").value = alturaCamaEspumante;
     txtVelocidadDerrame = 6.29+(23.88*txtNivelDisabled)+(9.06*txtVelocidadSuperficial)+(0.204*txtEspumanteVR)-(0.587*txtColectorVR)+(0.456*contenidoPlomo);
+
     document.getElementById("txtVelocidadDerrame").value = txtVelocidadDerrame;
     airePerdido = (((txtAireDisabled*Math.pow(100,3))/60)-((txtVelocidadDerrame*txtPerimetroCelda*100*alturaCamaEspumante)))/(Math.pow(100,3))*60
     document.getElementById("txtJb").value = airePerdido;
@@ -836,6 +939,17 @@ function variablesRespuesta(){
 
     document.getElementById("txtRecuperacionAgua").value = txtRecuperacionAgua;
     //print("PORCENTAJE SOLIDOS"+porcentajeSolidos);
+
+    txtAireDisabled = document.getElementById("txtAireDisabled").value
+    txtNivelDisabled = document.getElementById("txtNivelDisabled").value
+    txtPSolidosDisabled = document.getElementById("txtPSolidosDisabled").value
+    txtEspumanteVCDisabled = document.getElementById("txtEspumanteVCDisabled").value
+
+    if (toneladaMineral < 0.001) {
+        velocidadDerrameDos = 0;
+    } else {
+        velocidadDerrameDos = -21.48+0.5134*txtAireDisabled+25.8*txtNivelDisabled+0.0574*txtFlujoSuperficial+0.452*txtPSolidosDisabled+0.0353*txtEspumanteVCDisabled;
+    }
     
     
     
@@ -846,6 +960,34 @@ function convertSeconds(s){
     var min = floor(s / 60);
     var sec = s % 60;
     return nf(min,2) + ':'+ nf(sec,2);
+
+}
+
+var vuelta = 2;
+function llenarTablaCabeza(){
+    table = document.getElementById("tablaCabeza");
+    print("tonelada mineral "+toneladaMineral);
+    for(var i = 1; i < vuelta ; i++)
+        {
+          // cells
+          /*-for(var j = 1; j < table.rows[i].cells.length; j++)
+          {
+              table.rows[i].cells[j].innerHTML ="mensaje";
+          }*/
+
+          table.rows[i].cells[1].innerHTML =toneladaMineral;
+          table.rows[i].cells[2].innerHTML =porcentajeSolidos;
+          table.rows[i].cells[3].innerHTML =txtTiempoResidencia;
+          table.rows[i].cells[4].innerHTML =document.getElementById("txtCabezaOro").value;
+          table.rows[i].cells[5].innerHTML =document.getElementById("txtCabezaPlata").value;
+          table.rows[i].cells[6].innerHTML =document.getElementById("txtCabezaPlomo").value;
+          table.rows[i].cells[7].innerHTML =document.getElementById("txtCabezaZinc").value;
+          table.rows[i].cells[8].innerHTML =document.getElementById("txtCabezaFierro").value;
+          table.rows[i].cells[9].innerHTML =document.getElementById("txtCabezaInsoluble").value;
+
+        }
+vuelta++;
+
 
 }
 
@@ -879,6 +1021,8 @@ function toneladasConcentrados(){
 
     porcentajeSolidos = 27.05 + 55 *contenidosOroConc + 0.0536*contenidosPlataConc - 3.61*contenidosPlomoConc- 9.12*contenidosZincConc + 5.73*contenidosFierroConc- 0.369*contenidosInsolubleConc
 
+    toneladaCola = txtTonelajeDisabled - toneladasConcentradoUno;
+
     document.getElementById("txtTonelajeConcentrado").value = toneladasConcentrado;
 
 
@@ -888,33 +1032,8 @@ function toneladasConcentrados(){
     print('PORCENTAJE : '+porcentajeSolidos);
 }
 
-var vuelta = 2;
-function llenarTablaCabeza(){
-    table = document.getElementById("tablaCabeza");
-    print("tonelada mineral "+toneladaMineral);
-    for(var i = 1; i < vuelta ; i++)
-        {
-          // cells
-          /*-for(var j = 1; j < table.rows[i].cells.length; j++)
-          {
-              table.rows[i].cells[j].innerHTML ="mensaje";
-          }*/
-
-          table.rows[i].cells[1].innerHTML =toneladaMineral;
-          table.rows[i].cells[2].innerHTML =porcentajeSolidos;
-          table.rows[i].cells[3].innerHTML =txtTiempoResidencia;
-          table.rows[i].cells[3].innerHTML =document.getElementById("txtCabezaOro").value;
-          table.rows[i].cells[3].innerHTML =document.getElementById("txtCabezaPlata").value;
-          table.rows[i].cells[3].innerHTML =document.getElementById("txtCabezaPlomo").value;
-          table.rows[i].cells[3].innerHTML =document.getElementById("txtCabezaZinc").value;
-          table.rows[i].cells[3].innerHTML =document.getElementById("txtCabezaFierro").value;
-          table.rows[i].cells[3].innerHTML =document.getElementById("txtCabezaInsoluble").value;
-
-        }
-vuelta++;
 
 
-}
 
 function setup(){
     keyTonelaje();
@@ -931,6 +1050,7 @@ function setup(){
     variablesAlimentacion();
     variablesRespuesta();
     dimensionesCelda();
+    ensaye();
     noCanvas();
     var timer = select('#reloj');
     var timerH = select('#relojHora');
@@ -942,7 +1062,7 @@ function setup(){
         
         dimensionesCelda();
         variablesAlimentacion();
-        
+        //ensaye();
         efectoDepresores();
         lineasActualesBases();
         //llenarTablaCabeza();
@@ -999,6 +1119,7 @@ function setup(){
             volumenPulpa();
             valoresContenidos();
             lineasActualesBases();
+            ensaye();
             variablesRespuesta();
             toneladasConcentrados();
             if (!(counterH % 1)) {

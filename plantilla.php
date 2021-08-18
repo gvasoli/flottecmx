@@ -563,14 +563,15 @@
                    <label for="validationCustom02" class="form-label">Colector</label>
                    <div class="input-group">
          <input type="text" class="form-control" placeholder="gr/t" id="txtColectorVR" name="txtColectorVR" disabled="">
-        
+        <input type="text" class="form-control" placeholder="ppm" id="" name="" value="gr/t" disabled="">
        </div>
 
            </div>
            <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Espumante</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="ppm" id="txtEspumanteVR" name="txtEspumanteVR" value="10.93" disabled="">
+                      <input type="text" class="form-control" placeholder="ppm" id="txtEspumanteVR" name="txtEspumanteVR" value="10.93" disabled="">
+                      <input type="text" class="form-control" placeholder="ppm" id="" name="" value="PPM" disabled="">
                 </div>
 
            </div>
@@ -578,6 +579,7 @@
                    <label for="validationCustom02" class="form-label">Sulfato de Zinc</label>
                    <div class="input-group">
          <input type="text" class="form-control" placeholder="gr/t" id="txtSulfatoZincVR" name="txtSulfatoZincVR" disabled="">
+         <input type="text" class="form-control" placeholder="ppm" id="" name="" value="gr/t" disabled="">
          
        </div>
 
@@ -586,6 +588,7 @@
                    <label for="validationCustom02" class="form-label">Cianuro</label>
                    <div class="input-group">
          <input type="text" class="form-control" placeholder="gr/t" id="txtCianuroVR" name="txtCianuroVR" disabled="">
+         <input type="text" class="form-control" placeholder="ppm" id="" name="" value="gr/t" disabled="">
          
        </div>
 
@@ -626,7 +629,7 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -639,7 +642,7 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -650,7 +653,7 @@
                                      <th>3:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -662,7 +665,7 @@
                                      <th>4:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -674,7 +677,7 @@
                                      <th>5:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -686,7 +689,7 @@
                                      <th>6:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -698,7 +701,7 @@
                                      <th>7:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -710,7 +713,7 @@
                                      <th>8:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -722,7 +725,7 @@
                                      <th>Resultado</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1196,7 +1199,7 @@
                                      <th>1:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1209,7 +1212,7 @@
                                      <th>2:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1221,7 +1224,7 @@
                                      <th>3:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1233,7 +1236,7 @@
                                      <th>4:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1245,7 +1248,7 @@
                                      <th>5:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1257,7 +1260,7 @@
                                      <th>6:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1269,7 +1272,7 @@
                                      <th>7:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1281,7 +1284,7 @@
                                      <th>8:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1293,7 +1296,7 @@
                                      <th>Resultado</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1301,8 +1304,6 @@
                                      <td></td>
                                      <td></td>
                                    </tr>
-
-
                                  </tbody>
                                </table>
                              </div>

@@ -44,9 +44,6 @@ var txtSulfatoZincVCDisabled = document.getElementById("txtSulfatoZincVCDisabled
 var txtCianuroVC = document.getElementById("txtCianuroVC").value;
 var txtCianuroVCDisabled = document.getElementById("txtCianuroVCDisabled").value;
 
-
-
-
 var txtVelocidadDerrame = document.getElementById("txtVelocidadDerrame").value;
 var txtAireRetenido = document.getElementById("txtAireRetenido").value;
 var txtRecuperacionAgua = document.getElementById("txtRecuperacionAgua").value;
@@ -270,6 +267,7 @@ var toneladaCola = 0;
 
 var toneladaMineral = 0;
 var porcentajeSolidos = 0;  
+var vuelta = 2;
 
 
 
@@ -541,12 +539,12 @@ function keyCiaunuro(){
 function tonelajeTurno(){
     txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
     if (timeleft==0){
-        txtAguaTurno = "";
+        txtTonelajeTurnoDisabled = 0;
     } else {
-        txtAguaTurno = (txtTonelajeDisabled * counterH) /60;
+        txtTonelajeTurnoDisabled = (txtTonelajeDisabled * counterH) /60;
 
     }
-    document.getElementById("txtTonelajeTurnoDisabled").value = txtAguaTurno;
+    document.getElementById("txtTonelajeTurnoDisabled").value = txtTonelajeTurnoDisabled;
 }
 
 function aguaTurno(){
@@ -963,11 +961,21 @@ function convertSeconds(s){
 
 }
 
-var vuelta = 2;
+var vuelta = 1;
+var totalToneladaMineral = 0;
+var totalPSolidos = 0;
+var totalTiempoResidencia = 0;
+var totalCabezaOro = 0;
+var totalCabezaPlata = 0;
+var totalCabezaPlomo = 0;
+var totalCabezaZinc = 0;
+var totalCabezaFierro = 0;
+var totalCabezaInsoluble = 0;
 function llenarTablaCabeza(){
     table = document.getElementById("tablaCabeza");
     print("tonelada mineral "+toneladaMineral);
-    for(var i = 1; i < vuelta ; i++)
+    
+    for(var i = 1; i < 2 ; i++)
         {
           // cells
           /*-for(var j = 1; j < table.rows[i].cells.length; j++)
@@ -975,28 +983,87 @@ function llenarTablaCabeza(){
               table.rows[i].cells[j].innerHTML ="mensaje";
           }*/
 
-          table.rows[i].cells[1].innerHTML =toneladaMineral;
-          table.rows[i].cells[2].innerHTML =porcentajeSolidos;
-          table.rows[i].cells[3].innerHTML =txtTiempoResidencia;
-          table.rows[i].cells[4].innerHTML =document.getElementById("txtCabezaOro").value;
-          table.rows[i].cells[5].innerHTML =document.getElementById("txtCabezaPlata").value;
-          table.rows[i].cells[6].innerHTML =document.getElementById("txtCabezaPlomo").value;
-          table.rows[i].cells[7].innerHTML =document.getElementById("txtCabezaZinc").value;
-          table.rows[i].cells[8].innerHTML =document.getElementById("txtCabezaFierro").value;
-          table.rows[i].cells[9].innerHTML =document.getElementById("txtCabezaInsoluble").value;
+          table.rows[vuelta].cells[1].innerHTML =toneladaMineral;
+          table.rows[vuelta].cells[2].innerHTML =porcentajeSolidos;
+          table.rows[vuelta].cells[3].innerHTML =txtTiempoResidencia;
+          table.rows[vuelta].cells[4].innerHTML =document.getElementById("txtCabezaOro").value;
+          table.rows[vuelta].cells[5].innerHTML =document.getElementById("txtCabezaPlata").value;
+          table.rows[vuelta].cells[6].innerHTML =document.getElementById("txtCabezaPlomo").value;
+          table.rows[vuelta].cells[7].innerHTML =document.getElementById("txtCabezaZinc").value;
+          table.rows[vuelta].cells[8].innerHTML =document.getElementById("txtCabezaFierro").value;
+          table.rows[vuelta].cells[9].innerHTML =document.getElementById("txtCabezaInsoluble").value;
 
         }
+
+        
 vuelta++;
 
 
 }
+var dividendo = 1;
+function calcularTablaCabeza(){
+    table = document.getElementById("tablaCabeza");
+    totalToneladaMineral = 0;
+    totalPSolidos = 0;
+    totalTiempoResidencia = 0;
+    totalCabezaOro = 0;
+    totalCabezaPlata = 0;
+    totalCabezaPlomo = 0;
+    totalCabezaZinc = 0;
+    totalCabezaFierro = 0;
+    totalCabezaInsoluble = 0;
+    var valor = 0;
+    
+    for(var j = 1; j < vuelta; j++)
+        
+          {
+
+              valor = parseFloat(table.rows[j].cells[1].innerHTML);
+              totalToneladaMineral = totalToneladaMineral+valor;
+              valor = parseFloat(table.rows[j].cells[2].innerHTML);
+              totalPSolidos = totalPSolidos + valor;
+              valor = parseFloat(table.rows[j].cells[3].innerHTML);
+              totalTiempoResidencia = totalTiempoResidencia + valor;
+              valor = parseFloat(table.rows[j].cells[4].innerHTML);
+              totalCabezaOro = totalCabezaOro + valor;
+              valor = parseFloat(table.rows[j].cells[5].innerHTML);
+              totalCabezaPlata = totalCabezaPlata + valor;
+              valor = parseFloat(table.rows[j].cells[6].innerHTML);
+              totalCabezaPlomo = totalCabezaPlomo + valor;
+              valor = parseFloat(table.rows[j].cells[7].innerHTML);
+              totalCabezaZinc = totalCabezaZinc + valor;
+              valor = parseFloat(table.rows[j].cells[8].innerHTML);
+              totalCabezaFierro = totalCabezaFierro + valor;
+              valor = parseFloat(table.rows[j].cells[9].innerHTML);
+              totalCabezaInsoluble = totalCabezaInsoluble + valor;
+              print("mmememememeem"+totalToneladaMineral);
+          }
+
+          table.rows[9].cells[1].innerHTML =totalToneladaMineral;
+          table.rows[9].cells[2].innerHTML =totalPSolidos/dividendo;
+          table.rows[9].cells[3].innerHTML =totalTiempoResidencia/dividendo;
+          table.rows[9].cells[4].innerHTML =totalCabezaOro/dividendo;
+          table.rows[9].cells[5].innerHTML =totalCabezaPlata/dividendo;
+          table.rows[9].cells[6].innerHTML =totalCabezaPlomo/dividendo;
+          table.rows[9].cells[7].innerHTML =totalCabezaZinc/dividendo;
+          table.rows[9].cells[8].innerHTML =totalCabezaFierro/dividendo;
+          table.rows[9].cells[9].innerHTML =totalCabezaInsoluble/dividendo;
+
+          dividendo++;
+
+}
+
+
+
+function toneladasMineral(){
+   /* txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
+    
+    print("TONELADA MINERAL "+toneladaMineral);*/
+}
 
 function toneladasConcentrados(){
-    var txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
+    var txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value; 
     toneladaMineral = (counterH*txtTonelajeDisabled)/60;
-
-    print("TONELADA MINERAL "+toneladaMineral);
-
     if (toneladaMineral=0){
         toneladasConcentradoUno = 0;
     } else {
@@ -1020,12 +1087,13 @@ function toneladasConcentrados(){
     }
 
     porcentajeSolidos = 27.05 + 55 *contenidosOroConc + 0.0536*contenidosPlataConc - 3.61*contenidosPlomoConc- 9.12*contenidosZincConc + 5.73*contenidosFierroConc- 0.369*contenidosInsolubleConc
-
+    toneladaMineral = (counterH*txtTonelajeDisabled)/60;
+    print("TONELADA MINERAL "+toneladaMineral);
     toneladaCola = txtTonelajeDisabled - toneladasConcentradoUno;
 
     document.getElementById("txtTonelajeConcentrado").value = toneladasConcentrado;
 
-
+    
     print('TONELAJE UNO : '+toneladasConcentradoUno);
     print('TONELAJE DOS: '+toneladasConcentradoDos);
     print('TONELAJE TRES: '+toneladasConcentradoTres);
@@ -1121,6 +1189,7 @@ function setup(){
             lineasActualesBases();
             ensaye();
             variablesRespuesta();
+            toneladasMineral();
             toneladasConcentrados();
             if (!(counterH % 1)) {
                 timerH.html(convertSeconds(counterH));
@@ -1133,9 +1202,11 @@ function setup(){
             }
 
             if (timemuestreo==120) {
+                llenarTablaCabeza();
+                calcularTablaCabeza();
                 alert('Muestra');
                 timemuestreo = 0;
-                llenarTablaCabeza();
+                
                 
             }    
         }

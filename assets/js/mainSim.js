@@ -1040,7 +1040,6 @@ function calcularTablaCabeza(){
     for(var j = 1; j < vuelta; j++)
         
           {
-
               valor = parseFloat(table.rows[j].cells[1].innerHTML);
               totalToneladaMineral = totalToneladaMineral+valor;
               valor = parseFloat(table.rows[j].cells[2].innerHTML);

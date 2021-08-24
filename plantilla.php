@@ -67,91 +67,91 @@
                <div class="col-md-2 text-center">
                    <label for="validationCustom01" class="">Oro</label>
                    <div class="row">
-                     <div class="col pe-0">
+                     <div class="col pe-0 px-1">
                         <label for="validationCustom02" class="">Cabeza</label>
-                        <input type="text" class="form-control" id="txtCabezaOro" name="txtCabezaOro" required placeholder="gr/t" disabled="true">
+                        <input type="text" class="form-control p-1" id="txtCabezaOro" name="txtCabezaOro" required placeholder="gr/t" disabled="true">
                       </div>
-                      <div class="col-md-5 pe-0">
+                      <div class="col-md-4 pe-0 px-1">
                         <label for="validationCustom02" class="">Ley Conc.</label>
-                          <input type="text" class="form-control" id="txtConcOro" name="txtConcOro" required placeholder="gr/t" disabled="true">
+                          <input type="text" class="form-control p-1" id="txtConcOro" name="txtConcOro" required placeholder="gr/t" disabled="true">
                       </div>
-                     <div class="col "><label for="validationCustom02" class="">Cola</label>
-                        <input type="text" class="form-control " id="txtColaOro" name="txtColaOro" required placeholder="gr/t" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cola</label>
+                        <input type="text" class="form-control p-1" id="txtColaOro" name="txtColaOro" required placeholder="gr/t" disabled="true">
                       </div>
                    </div>
                 </div>
                 <div class="col-md-2 text-center">
                    <label for="validationCustom01" class="">Plata</label>
                    <div class="row">
-                     <div class="col pe-0"><label for="validationCustom02" class="">Cabeza</label>
-                        <input type="text" class="form-control" id="txtCabezaPlata" name="txtCabezaPlata" required placeholder="gr/t" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cabeza</label>
+                        <input type="text" class="form-control p-1" id="txtCabezaPlata" name="txtCabezaPlata" required placeholder="gr/t" disabled="true">
                       </div>
-                      <div class="col-md-5 pe-0">
+                      <div class="col-md-4 pe-0 px-1">
                         <label for="validationCustom02" class="">Ley Conc.</label>
-                          <input type="text" class="form-control" id="txtConcPlata" name="txtConcPlata" required placeholder="gr/t" disabled="true">
+                          <input type="text" class="form-control p-1" id="txtConcPlata" name="txtConcPlata" required placeholder="gr/t" disabled="true">
                       </div>
-                     <div class="col "><label for="validationCustom02" class="">Cola</label>
-                        <input type="text" class="form-control " id="txtColaPlata" name="txtColaPlata" required placeholder="gr/t" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cola</label>
+                        <input type="text" class="form-control p-1" id="txtColaPlata" name="txtColaPlata" required placeholder="gr/t" disabled="true">
                       </div>
                    </div>
                 </div>
                 <div class="col-md-2 text-center">
                    <label for="validationCustom01" class="">Plomo</label>
                    <div class="row">
-                     <div class="col pe-0"><label for="validationCustom02" class="">Cabeza</label>
-                        <input type="text" class="form-control" id="txtCabezaPlomo" name="txtCabezaPlomo" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cabeza</label>
+                        <input type="text" class="form-control p-1" id="txtCabezaPlomo" name="txtCabezaPlomo" required placeholder="%" disabled="true">
                       </div>
-                      <div class="col-md-5 pe-0">
+                      <div class="col-md-4 pe-0 px-1">
                         <label for="validationCustom02" class="">Ley Conc.</label>
-                          <input type="text" class="form-control" id="txtConcPlomo" name="txtConcPlomo" required placeholder="%" disabled="true">
+                          <input type="text" class="form-control p-1" id="txtConcPlomo" name="txtConcPlomo" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col "><label for="validationCustom02" class="">Cola</label>
-                        <input type="text" class="form-control " id="txtColaPlomo" name="txtColaPlomo" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cola</label>
+                        <input type="text" class="form-control p-1" id="txtColaPlomo" name="txtColaPlomo" required placeholder="%" disabled="true">
                       </div>
                    </div>
                 </div>
                 <div class="col-md-2 text-center">
                    <label for="validationCustom01" class="">Zinc</label>
                    <div class="row">
-                     <div class="col pe-0"><label for="validationCustom02" class="">Cabeza</label>
-                        <input type="text" class="form-control" id="txtCabezaZinc" name="txtCabezaZinc" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cabeza</label>
+                        <input type="text" class="form-control p-1" id="txtCabezaZinc" name="txtCabezaZinc" required placeholder="%" disabled="true">
                       </div>
-                      <div class="col-md-5 pe-0">
+                      <div class="col-md-4 pe-0 px-1">
                         <label for="validationCustom02" class="">Ley Conc.</label>
-                          <input type="text" class="form-control" id="txtConcZinc" name="txtConcZinc" required placeholder="%" disabled="true">
+                          <input type="text" class="form-control p-1" id="txtConcZinc" name="txtConcZinc" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col "><label for="validationCustom02" class="">Cola</label>
-                        <input type="text" class="form-control " id="txtColaZinc" name="txtColaZinc" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cola</label>
+                        <input type="text" class="form-control p-1" id="txtColaZinc" name="txtColaZinc" required placeholder="%" disabled="true">
                       </div>
                    </div>
                 </div>
                 <div class="col-md-2 text-center">
                    <label for="validationCustom01" class="">Fierro</label>
                    <div class="row">
-                     <div class="col pe-0"><label for="validationCustom02" class="">Cabeza</label>
-                        <input type="text" class="form-control" id="txtCabezaFierro" name="txtCabezaFierro" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cabeza</label>
+                        <input type="text" class="form-control p-1" id="txtCabezaFierro" name="txtCabezaFierro" required placeholder="%" disabled="true">
                       </div>
-                      <div class="col-md-5 pe-0">
+                      <div class="col-md-4 pe-0 px-1">
                         <label for="validationCustom02" class="">Ley Conc.</label>
-                          <input type="text" class="form-control" id="txtConcFierro" name="txtConcFierro" required placeholder="%" disabled="true">
+                          <input type="text" class="form-control p-1" id="txtConcFierro" name="txtConcFierro" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col "><label for="validationCustom02" class="">Cola</label>
-                        <input type="text" class="form-control " id="txtColaFierro" name="txtColaFierro" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cola</label>
+                        <input type="text" class="form-control p-1" id="txtColaFierro" name="txtColaFierro" required placeholder="%" disabled="true">
                       </div>
                    </div>
                 </div>
                 <div class="col-md-2 text-center">
                    <label for="validationCustom01" class="">Insoluble</label>
                    <div class="row">
-                     <div class="col pe-0"><label for="validationCustom02" class="">Cabeza</label>
-                        <input type="text" class="form-control" id="txtCabezaInsoluble" name="txtCabezaInsoluble" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cabeza</label>
+                        <input type="text" class="form-control p-1" id="txtCabezaInsoluble" name="txtCabezaInsoluble" required placeholder="%" disabled="true">
                       </div>
-                      <div class="col-md-5 pe-0">
+                      <div class="col-md-4 pe-0 px-1">
                         <label for="validationCustom02" class="">Ley Conc.</label>
-                          <input type="text" class="form-control" id="txtConcInsoluble" name="txtConcInsoluble" required placeholder="%" disabled="true">
+                          <input type="text" class="form-control p-1" id="txtConcInsoluble" name="txtConcInsoluble" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col "><label for="validationCustom02" class="">Cola</label>
-                        <input type="text" class="form-control " id="txtColaInsoluble" name="txtColaInsoluble" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1"><label for="validationCustom02" class="">Cola</label>
+                        <input type="text" class="form-control p-1" id="txtColaInsoluble" name="txtColaInsoluble" required placeholder="%" disabled="true">
                       </div>
                    </div>
                 </div>
@@ -389,7 +389,7 @@
                    <label for="validationCustom02" class="form-label">Tonelaje</label>
                    <div class="input-group">
 
-         <input type="text" class="form-control" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="390" onchange="keyTonelaje()">
+         <input type="text" class="form-control" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="360" onchange="keyTonelaje()">
          <input type="text" class="form-control" placeholder="t/hr" id="txtTonelajeDisabled" name="txtTonelajeDisabled" disabled value="">
          <input type="text" class="form-control" placeholder="t/turno" id="txtTonelajeTurnoDisabled" name="txtTonelajeTurnoDisabled" disabled value="0">
        </div>

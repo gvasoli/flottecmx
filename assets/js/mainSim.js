@@ -781,17 +781,17 @@ function lineasActualesBases(){
 function valoresContenidos(){
     var txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
     cabezaOro = -0.4686+(1.501*plomoCabeza);
-    document.getElementById("txtCabezaOro").value = cabezaOro;
+    document.getElementById("txtCabezaOro").value = cabezaOro.toFixed(2);
     cabezaPlata = 195.1+(15.12*plomoCabeza);
-    document.getElementById("txtCabezaPlata").value = cabezaPlata;
+    document.getElementById("txtCabezaPlata").value = cabezaPlata.toFixed(2);
     cabezaZinc = 0.3444+(1.226*plomoCabeza);
-    document.getElementById("txtCabezaZinc").value = cabezaZinc;
+    document.getElementById("txtCabezaZinc").value = cabezaZinc.toFixed(2);
     cabezaFierro = 3.878+(0.5452*plomoCabeza);
-    document.getElementById("txtCabezaFierro").value = cabezaFierro;
+    document.getElementById("txtCabezaFierro").value = cabezaFierro.toFixed(2);
     cabezaInsoluble = 69.32-(3.799*plomoCabeza);
-    document.getElementById("txtCabezaInsoluble").value = cabezaInsoluble;
+    document.getElementById("txtCabezaInsoluble").value = cabezaInsoluble.toFixed(2);
 
-    document.getElementById("txtCabezaPlomo").value = plomoCabeza;
+    document.getElementById("txtCabezaPlomo").value = plomoCabeza.toFixed(2);
 
 
 
@@ -856,19 +856,19 @@ function ensaye(){
     
     //alert(contenidosOroConc);
     //print(contenidosOroConc);
-    document.getElementById("txtConcOro").value = leyConcOro;
-    document.getElementById("txtConcPlata").value = leyConcPlata;
-    document.getElementById("txtConcPlomo").value = leyConcPlomo;
-    document.getElementById("txtConcZinc").value = leyConcZinc;
-    document.getElementById("txtConcFierro").value = leyConcFierro;
-    document.getElementById("txtConcInsoluble").value = leyConcInsoluble;
+    document.getElementById("txtConcOro").value = leyConcOro.toFixed(2);
+    document.getElementById("txtConcPlata").value = leyConcPlata.toFixed(2);
+    document.getElementById("txtConcPlomo").value = leyConcPlomo.toFixed(2);
+    document.getElementById("txtConcZinc").value = leyConcZinc.toFixed(2);
+    document.getElementById("txtConcFierro").value = leyConcFierro.toFixed(2);
+    document.getElementById("txtConcInsoluble").value = leyConcInsoluble.toFixed(2);
 
-    document.getElementById("txtColaOro").value = colaOro;
-    document.getElementById("txtColaPlata").value = colaPlata;
-    document.getElementById("txtColaPlomo").value = colaPlomo;
-    document.getElementById("txtColaZinc").value = colaZinc;
-    document.getElementById("txtColaFierro").value = colaFierro;
-    document.getElementById("txtColaInsoluble").value = colaInsoluble;
+    document.getElementById("txtColaOro").value = colaOro.toFixed(2);
+    document.getElementById("txtColaPlata").value = colaPlata.toFixed(2);
+    document.getElementById("txtColaPlomo").value = colaPlomo.toFixed(2);
+    document.getElementById("txtColaZinc").value = colaZinc.toFixed(2);
+    document.getElementById("txtColaFierro").value = colaFierro.toFixed(2);
+    document.getElementById("txtColaInsoluble").value = colaInsoluble.toFixed(2);
 
 
 
@@ -994,6 +994,7 @@ var totalCabezaPlomo = 0;
 var totalCabezaZinc = 0;
 var totalCabezaFierro = 0;
 var totalCabezaInsoluble = 0;
+
 function llenarTablaCabeza(){
     table = document.getElementById("tablaCabeza");
     print("tonelada mineral "+toneladaMineral);
@@ -1007,8 +1008,8 @@ function llenarTablaCabeza(){
           }*/
 
           table.rows[vuelta].cells[1].innerHTML =toneladaMineral;
-          table.rows[vuelta].cells[2].innerHTML =porcentajeSolidos;
-          table.rows[vuelta].cells[3].innerHTML =txtTiempoResidencia;
+          table.rows[vuelta].cells[2].innerHTML =porcentajeSolidos.toFixed(2);
+          table.rows[vuelta].cells[3].innerHTML =txtTiempoResidencia.toFixed(2);
           table.rows[vuelta].cells[4].innerHTML =document.getElementById("txtCabezaOro").value;
           table.rows[vuelta].cells[5].innerHTML =document.getElementById("txtCabezaPlata").value;
           table.rows[vuelta].cells[6].innerHTML =document.getElementById("txtCabezaPlomo").value;
@@ -1114,7 +1115,7 @@ function toneladasConcentrados(){
     print("TONELADA MINERAL "+toneladaMineral);
     toneladaCola = txtTonelajeDisabled - toneladasConcentradoUno;
 
-    document.getElementById("txtTonelajeConcentrado").value = toneladasConcentrado;
+    document.getElementById("txtTonelajeConcentrado").value = toneladasConcentrado.toFixed(2);
 
     
     print('TONELAJE UNO : '+toneladasConcentradoUno);

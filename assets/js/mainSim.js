@@ -331,11 +331,11 @@ function keyTonelaje(){
 function keyDiametroAgitador(){
     var txtDiametroAgitador  = document.getElementById("txtDiametroAgitador").value;
     txtAreaEfectiva = (3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2));
-    document.getElementById("txtAreaEfectiva").value = txtAreaEfectiva;
+    document.getElementById("txtAreaEfectiva").value = txtAreaEfectiva.toFixed(2);
     txtVolEfectivo = txtAlturaCelda * ((3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2)))-txtNivelDisabled*((3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2)));
-    document.getElementById("txtVolEfectivo").value = txtVolEfectivo;
+    document.getElementById("txtVolEfectivo").value = txtVolEfectivo.toFixed(2);
     txtVolReal = txtVolEfectivo - (((txtAireRetenido)*(txtVolEfectivo))/100);
-    document.getElementById("txtVolReal").value = txtVolReal;
+    document.getElementById("txtVolReal").value = txtVolReal.toFixed(2);
    
 }
 
@@ -343,13 +343,13 @@ function keyDiametroCelda(){
     var txtDiametroAgitador  = document.getElementById("txtDiametroAgitador").value;
     var txtDiametroCelda  = document.getElementById("txtDiametroCelda").value;
     txtAreaEfectiva = (3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2));
-    document.getElementById("txtAreaEfectiva").value = txtAreaEfectiva;
+    document.getElementById("txtAreaEfectiva").value = txtAreaEfectiva.toFixed(2);
     txtPerimetroCelda = 2 * 3.1416 *(txtDiametroCelda/2);
-    document.getElementById("txtPerimetroCelda").value = txtPerimetroCelda;
+    document.getElementById("txtPerimetroCelda").value = txtPerimetroCelda.toFixed(2);
     txtVolEfectivo = txtAlturaCelda * ((3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2)))-txtNivelDisabled*((3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2)));
-    document.getElementById("txtVolEfectivo").value = txtVolEfectivo;
+    document.getElementById("txtVolEfectivo").value = txtVolEfectivo.toFixed(2);
     txtVolReal = txtVolEfectivo - (((txtAireRetenido)*(txtVolEfectivo))/100);
-    document.getElementById("txtVolReal").value = txtVolReal;
+    document.getElementById("txtVolReal").value = txtVolReal.toFixed(2);
    
 }
 
@@ -364,11 +364,11 @@ function keyPSolidos(){
     
     document.getElementById("txtTonelajeDisabled").value = txtTonelaje;
     txtAguaHora = (txtTonelaje)*((100-txtPSolidos)/txtPSolidos);
-    document.getElementById("txtAguaHora").value = txtAguaHora;
+    document.getElementById("txtAguaHora").value = txtAguaHora.toFixed(2);
     txtVolumenPulpaHora = txtAguaHora+(txtTonelaje/txtGravedadEspecifica);
-    document.getElementById("txtVolumenPulpaHora").value = txtVolumenPulpaHora;
+    document.getElementById("txtVolumenPulpaHora").value = txtVolumenPulpaHora.toFixed(2);
     txtTiempoResidencia = (txtVolReal/txtVolumenPulpaHora)*60;
-    document.getElementById("txtTiempoResidencia").value = txtTiempoResidencia;
+    document.getElementById("txtTiempoResidencia").value = txtTiempoResidencia.toFixed(2);
     if (txtPSolidos>36) {
         txtPSolidosDisabled = 36;
     } else if ( txtPSolidos<30){
@@ -377,7 +377,7 @@ function keyPSolidos(){
         txtPSolidosDisabled = txtPSolidos;
     }
 
-    document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled;
+    document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled.toFixed(2);
     
 }
 
@@ -390,14 +390,14 @@ function keyAlturaCelda(){
     txtPerimetroCelda = 2 * 3.1416 *(txtDiametroCelda/2);
     
     txtVolEfectivo = txtAlturaCelda * ((3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2)))-txtNivelDisabled*((3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2)));
-    document.getElementById("txtVolEfectivo").value = txtVolEfectivo;
+    document.getElementById("txtVolEfectivo").value = txtVolEfectivo.toFixed(2);
     txtVolReal = txtVolEfectivo - (((txtAireRetenido)*(txtVolEfectivo))/100);
-    document.getElementById("txtVolReal").value = txtVolReal;
+    document.getElementById("txtVolReal").value = txtVolReal.toFixed(2);
    
 }
 
 function keyAire(){
-    var txtAire = document.getElementById("txtAire").value;
+    txtAire = document.getElementById("txtAire").value;
 
     if(txtAire<1){
         txtAireDisabled = 0;
@@ -408,7 +408,7 @@ function keyAire(){
 
     } 
 
-    document.getElementById("txtAireDisabled").value = txtAire;
+    document.getElementById("txtAireDisabled").value = txtAireDisabled;
     txtEspumanteVR = document.getElementById("txtEspumanteVR").value;
     txtVelocidadSuperficial = document.getElementById("txtVelocidadSuperficial").value;
     txtNivelDisabled = document.getElementById("txtNivelDisabled").value;
@@ -876,18 +876,18 @@ function ensaye(){
 
 function dimensionesCelda(){
     txtAreaEfectiva = (3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2));
-    document.getElementById("txtAreaEfectiva").value = txtAreaEfectiva;
+    document.getElementById("txtAreaEfectiva").value = txtAreaEfectiva.toFixed(2);
     txtPerimetroCelda = 2 * 3.1416 *(txtDiametroCelda/2);
-    document.getElementById("txtPerimetroCelda").value = txtPerimetroCelda;
+    document.getElementById("txtPerimetroCelda").value = txtPerimetroCelda.toFixed(2);
     txtVolEfectivo = (txtAlturaCelda * ((3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2))))-(txtNivelDisabled*((3.1416*Math.pow(txtDiametroCelda/2,2))-(3.1416*Math.pow(txtDiametroAgitador/2,2))));
-    document.getElementById("txtVolEfectivo").value = txtVolEfectivo;
+    document.getElementById("txtVolEfectivo").value = txtVolEfectivo.toFixed(2);
     //print('alerta '+txtVolEfectivo+' '+txtAireRetenido);
     txtVolReal = txtVolEfectivo - (((txtAireRetenido)*(txtVolEfectivo))/100);
     document.getElementById("txtVolReal").value = txtVolReal;
     txtVolumenPulpaHora = document.getElementById("txtVolumenPulpaHora").value;
     txtTiempoResidencia = (txtVolReal/txtVolumenPulpaHora)*60;
     //alert(txtVolReal);
-    document.getElementById("txtTiempoResidencia").value = txtTiempoResidencia;
+    document.getElementById("txtTiempoResidencia").value = txtTiempoResidencia.toFixed(2);
     
 }
 
@@ -896,7 +896,7 @@ function variablesAlimentacion(){
     /*txtAguaHora = (txtTonelajeDisabled)*((100-txtPSolidos)/txtPSolidos);
     txtVolumenPulpaHora = txtAguaHora+(txtTonelajeDisabled/txtGravedadEspecifica);
     txtTiempoResidencia = (txtVolReal/txtVolumenPulpaHora)*60;*/
-    if (txtPSolidos>36) {
+    /*if (txtPSolidos>36) {
         txtPSolidosDisabled = 36;
     } else if ( txtPSolidos<30){
         txtPSolidosDisabled = 30;
@@ -904,7 +904,7 @@ function variablesAlimentacion(){
         txtPSolidosDisabled = txtPSolidos;
     }
 
-    document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled;
+    document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled.toFixed(2);*/
 
 
     
@@ -920,13 +920,13 @@ function variablesRespuesta(){
     txtCianuroVR = (txtCianuroVCDisabled*(60)*(txtCianuroCR/100))/txtTonelaje;*/
 
     txtVelocidadSuperficial = ((txtAireDisabled*Math.pow(100,3))/60)/(txtAreaEfectiva*Math.pow(100,2));
-    document.getElementById("txtVelocidadSuperficial").value = txtVelocidadSuperficial;
+    document.getElementById("txtVelocidadSuperficial").value = txtVelocidadSuperficial.toFixed(2);
     txtAireRetenido = 1.77+0.714*(txtEspumanteVR)-2.18*(txtVelocidadSuperficial)-12.29*(txtNivelDisabled);
     document.getElementById("txtAireRetenido").value = txtAireRetenido;
     txtFlujoSuperficial = txtAireRetenido * 5.59;
-    document.getElementById("txtFlujoSuperficial").value = txtFlujoSuperficial;
-    txtDiametroBurbujas = (6*txtVelocidadSuperficial*10)/txtFlujoSuperficial;
-    document.getElementById("txtDiametroBurbujas").value = txtDiametroBurbujas;
+    document.getElementById("txtFlujoSuperficial").value = txtFlujoSuperficial.toFixed(2);
+    txtDiametroBurbujas = (6*txtVelocidadSuperficial*10)/txtFlujoSuperficial.toFixed(2);
+    document.getElementById("txtDiametroBurbujas").value = txtDiametroBurbujas.toFixed(2);
 
     
     //txtRecuperacionAgua = 

@@ -266,7 +266,7 @@
 
            </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Presupuestos de ganancias</label>
+           <label for="validationCustom02" style = "font-size: 0.99rem"class="form-label">Presupuestos de ganancias</label>
            <input type="text" class="form-control" id="validationCustom02" required placeholder="dlls">
 
          </div>
@@ -543,6 +543,7 @@
                    <label for="validationCustom02" class="form-label">Aire recuperado</label>
                    <div class="input-group">
          <input type="text" class="form-control" placeholder="%" id="txtAireRecuperado" name="txtAireRecuperado" disabled="">
+         <input type="text" class="form-control" placeholder="%" id="txtAireRecuperadoP" name="txtAireRecuperadoP" disabled="">
        </div>
 
            </div>

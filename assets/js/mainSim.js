@@ -812,6 +812,7 @@ function valoresContenidos(){
 function ensaye(){
 
     txtVelocidadDerrame = document.getElementById("txtVelocidadDerrame").value;
+    txtTonelajeConcentrado = document.getElementById("txtTonelajeConcentrado").value;
 
     if(toneladasConcentradoDos=0) {
         leyConcOro = 0;
@@ -853,16 +854,39 @@ function ensaye(){
         colaInsoluble = colaPlomoInsoluble;
     }
 
-    
-    //alert(contenidosOroConc);
-    //print(contenidosOroConc);
+    if (isNaN(leyConcOro)) {
+        leyConcOro = 0;
+    }
+    if (isNaN(leyConcPlata)) {
+        leyConcPlata = 0;
+    }
+    if (isNaN(leyConcPlomo)) {
+        leyConcPlomo = 0;
+    }
+    if (isNaN(leyConcZinc)) {
+        leyConcZinc = 0;
+    }
+    if (isNaN(leyConcFierro)) {
+        leyConcFierro = 0;
+    }
+    if (isNaN(leyConcInsoluble)) {
+        leyConcInsoluble = 0;
+    }
+
     document.getElementById("txtConcOro").value = leyConcOro.toFixed(2);
     document.getElementById("txtConcPlata").value = leyConcPlata.toFixed(2);
     document.getElementById("txtConcPlomo").value = leyConcPlomo.toFixed(2);
     document.getElementById("txtConcZinc").value = leyConcZinc.toFixed(2);
     document.getElementById("txtConcFierro").value = leyConcFierro.toFixed(2);
     document.getElementById("txtConcInsoluble").value = leyConcInsoluble.toFixed(2);
-
+    if (txtTonelajeConcentrado=0) {
+        colaOro = cabezaOro;
+        colaPlata = cabezaPlata;
+        colaPlomo = plomoCabeza;
+        colaZinc = cabezaZinc;
+        colaFierro = cabezaFierro;
+        colaInsoluble = cabezaInsoluble;
+    }
     document.getElementById("txtColaOro").value = colaOro.toFixed(2);
     document.getElementById("txtColaPlata").value = colaPlata.toFixed(2);
     document.getElementById("txtColaPlomo").value = colaPlomo.toFixed(2);
@@ -933,7 +957,9 @@ function variablesRespuesta(){
     alturaCamaEspumante = -105-(408.3*txtNivelDisabled)+(1.734*txtColectorVR)+(1.83*txtEspumanteVR)+(173.3*txtVelocidadSuperficial)-(4.95*contenidoPlomo)-(535*Math.pow(txtNivelDisabled,2))-(0.0449*Math.pow(txtColectorVR,2))-(0.0059*Math.pow(txtEspumanteVR,2))-(60.3*Math.pow(txtVelocidadSuperficial,2))-(0.0503*Math.pow(contenidoPlomo,2))+((5.99)*(txtNivelDisabled)*(txtColectorVR))-((6.06)*(txtNivelDisabled)*(txtEspumanteVR))+((403)*(txtNivelDisabled)*(txtVelocidadSuperficial))-((11.13)*(txtNivelDisabled)*(contenidoPlomo))+((0.0493)*(txtColectorVR)*(txtEspumanteVR))-((2.5)*(txtEspumanteVR)*(txtVelocidadSuperficial))+((0.0113)*(txtEspumanteVR)*(contenidoPlomo))+((4.63)*(txtVelocidadSuperficial)*(contenidoPlomo));
     //document.getElementById("alturaCamaEspumante").value = alturaCamaEspumante;
     txtVelocidadDerrame = 6.29+(23.88*txtNivelDisabled)+(9.06*txtVelocidadSuperficial)+(0.204*txtEspumanteVR)-(0.587*txtColectorVR)+(0.456*contenidoPlomo);
-
+if (txtVelocidadDerrame<0) {
+    txtVelocidadDerrame = 0;
+}
     document.getElementById("txtVelocidadDerrame").value = txtVelocidadDerrame.toFixed(2);
     airePerdido = (((txtAireDisabled*Math.pow(100,3))/60)-((txtVelocidadDerrame*txtPerimetroCelda*100*alturaCamaEspumante)))/(Math.pow(100,3))*60
     document.getElementById("txtJb").value = airePerdido.toFixed(2);
@@ -948,7 +974,11 @@ function variablesRespuesta(){
         -(0.198*txtEspumanteVR*contenidoPlomo)+(5.09*txtVelocidadSuperficial*contenidoPlomo))*1.1;
     document.getElementById("txtAlturaCama").value = txtAlturaCama.toFixed(2);
     txtAireRecuperado = (txtVelocidadDerrame*txtPerimetroCelda*100*txtAlturaCama)/((txtAireDisabled*Math.pow(100,3))/60);
+    if (txtAireRecuperado<0) {
+    txtAireRecuperado = 0;
+}
     document.getElementById("txtAireRecuperado").value = txtAireRecuperado.toFixed(2);
+     document.getElementById("txtAireRecuperadoP").value = (txtAireRecuperado.toFixed(2)*100)+" %";
 
     /*if (txtVelocidadDerrame<=0){
         txtRecuperacionAgua = 0;

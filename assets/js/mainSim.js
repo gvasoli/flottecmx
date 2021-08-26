@@ -287,9 +287,9 @@ function keyTonelaje(){
     //dimensionesCelda();
     //txtTonelajeDisabled = txtTonelaje;
     txtAguaHora = (txtTonelajeDisabled)*((100-txtPSolidos)/txtPSolidos);
-    document.getElementById("txtAguaHora").value = txtAguaHora;
+    document.getElementById("txtAguaHora").value = txtAguaHora.toFixed(2);
     txtVolumenPulpaHora = txtAguaHora+(txtTonelajeDisabled/txtGravedadEspecifica);
-    document.getElementById("txtVolumenPulpaHora").value = txtVolumenPulpaHora;
+    document.getElementById("txtVolumenPulpaHora").value = txtVolumenPulpaHora.toFixed(2);
     
     dimensionesCelda();
     keySulfato();
@@ -300,15 +300,15 @@ function keyTonelaje(){
     //variablesAlimentacion();
     
     cabezaOro = -0.4686+(1.501*plomoCabeza);
-    document.getElementById("txtCabezaOro").value = cabezaOro;
+    document.getElementById("txtCabezaOro").value = cabezaOro.toFixed(2);
     cabezaPlata = 195.1+(15.12*plomoCabeza);
-    document.getElementById("txtCabezaPlata").value = cabezaPlata;
+    document.getElementById("txtCabezaPlata").value = cabezaPlata.toFixed(2);
     cabezaZinc = 0.3444+(1.226*plomoCabeza);
-    document.getElementById("txtCabezaZinc").value = cabezaZinc;
+    document.getElementById("txtCabezaZinc").value = cabezaZinc.toFixed(2);
     cabezaFierro = 3.878+(0.5452*plomoCabeza);
-    document.getElementById("txtCabezaFierro").value = cabezaFierro;
+    document.getElementById("txtCabezaFierro").value = cabezaFierro.toFixed(2);
     cabezaInsoluble = 69.32-(3.799*plomoCabeza);
-    document.getElementById("txtCabezaInsoluble").value = cabezaInsoluble;
+    document.getElementById("txtCabezaInsoluble").value = cabezaInsoluble.toFixed(2);
 
 
     
@@ -415,7 +415,7 @@ function keyAire(){
 
     txtAireRetenido = 1.77+0.714*(txtEspumanteVR)-2.18*(txtVelocidadSuperficial)-12.29*(txtNivelDisabled);
 
-    document.getElementById("txtAireRetenido").value = txtAireRetenido;
+    document.getElementById("txtAireRetenido").value = txtAireRetenido.toFixed(2);
     variablesRespuesta();
     efectoDepresores();
     lineasActualesBases();
@@ -457,7 +457,7 @@ function keyColector(){
 
     txtColectorVR = (txtColectorVCDisabled*(60)*(txtColectorCR/100))/txtTonelajeDisabled;
 
-    document.getElementById("txtColectorVR").value = txtColectorVR;
+    document.getElementById("txtColectorVR").value = txtColectorVR.toFixed(2);
 
     variablesRespuesta();
     efectoDepresores();
@@ -487,7 +487,7 @@ function keyEspumante(){
 
     txtEspumanteVR = (txtEspumanteVCDisabled*(60)*(txtEspumanteCR/100))/txtAguaHora;
 
-    document.getElementById("txtEspumanteVR").value = txtEspumanteVR;
+    document.getElementById("txtEspumanteVR").value = txtEspumanteVR.toFixed(2);
     variablesRespuesta();
     efectoDepresores();
     lineasActualesBases();
@@ -511,7 +511,7 @@ function keySulfato(){
     txtSulfatoZincCR = document.getElementById("txtSulfatoZincCR").value;
     txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
     txtSulfatoZincVR = (txtSulfatoZincVCDisabled*(60)*(txtSulfatoZincCR/100))/txtTonelajeDisabled;
-    document.getElementById("txtSulfatoZincVR").value = txtSulfatoZincVR;
+    document.getElementById("txtSulfatoZincVR").value = txtSulfatoZincVR.toFixed(2);
     variablesRespuesta();
     efectoDepresores();
     lineasActualesBases();
@@ -534,7 +534,7 @@ function keyCianuro(){
     txtCianuroCR = document.getElementById("txtCianuroCR").value;
     txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
     txtCianuroVR = (txtCianuroVCDisabled*(60)*(txtCianuroCR/100))/txtTonelajeDisabled;
-    document.getElementById("txtCianuroVR").value = txtCianuroVR;
+    document.getElementById("txtCianuroVR").value = txtCianuroVR.toFixed(2);
     variablesRespuesta();
     efectoDepresores();
     lineasActualesBases();
@@ -558,7 +558,7 @@ function aguaTurno(){
     txtTonelajeTurnoDisabled = document.getElementById("txtTonelajeTurnoDisabled").value;
     txtPSolidosDisabled = document.getElementById("txtPSolidosDisabled").value;
     txtAguaTurno = txtTonelajeTurnoDisabled*(100-txtPSolidosDisabled)/txtPSolidosDisabled;
-    document.getElementById("txtAguaTurno").value = txtAguaTurno;
+    document.getElementById("txtAguaTurno").value = txtAguaTurno.toFixed(2);
 }
 
 function volumenPulpa(){
@@ -568,7 +568,7 @@ function volumenPulpa(){
     txtVolumenPulpaTurno =txtAguaTurno+(txtTonelajeTurnoDisabled/txtGravedadEspecifica);
     
 
-    document.getElementById("txtVolumenPulpaTurno").value = txtVolumenPulpaTurno;
+    document.getElementById("txtVolumenPulpaTurno").value = txtVolumenPulpaTurno.toFixed(2);
 }
 
 function efectoDepresores(){
@@ -883,7 +883,7 @@ function dimensionesCelda(){
     document.getElementById("txtVolEfectivo").value = txtVolEfectivo.toFixed(2);
     //print('alerta '+txtVolEfectivo+' '+txtAireRetenido);
     txtVolReal = txtVolEfectivo - (((txtAireRetenido)*(txtVolEfectivo))/100);
-    document.getElementById("txtVolReal").value = txtVolReal;
+    document.getElementById("txtVolReal").value = txtVolReal.toFixed(2);
     txtVolumenPulpaHora = document.getElementById("txtVolumenPulpaHora").value;
     txtTiempoResidencia = (txtVolReal/txtVolumenPulpaHora)*60;
     //alert(txtVolReal);
@@ -896,7 +896,7 @@ function variablesAlimentacion(){
     /*txtAguaHora = (txtTonelajeDisabled)*((100-txtPSolidos)/txtPSolidos);
     txtVolumenPulpaHora = txtAguaHora+(txtTonelajeDisabled/txtGravedadEspecifica);
     txtTiempoResidencia = (txtVolReal/txtVolumenPulpaHora)*60;*/
-    /*if (txtPSolidos>36) {
+    if (txtPSolidos>36) {
         txtPSolidosDisabled = 36;
     } else if ( txtPSolidos<30){
         txtPSolidosDisabled = 30;
@@ -904,7 +904,7 @@ function variablesAlimentacion(){
         txtPSolidosDisabled = txtPSolidos;
     }
 
-    document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled.toFixed(2);*/
+    document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled;
 
 
     
@@ -922,7 +922,7 @@ function variablesRespuesta(){
     txtVelocidadSuperficial = ((txtAireDisabled*Math.pow(100,3))/60)/(txtAreaEfectiva*Math.pow(100,2));
     document.getElementById("txtVelocidadSuperficial").value = txtVelocidadSuperficial.toFixed(2);
     txtAireRetenido = 1.77+0.714*(txtEspumanteVR)-2.18*(txtVelocidadSuperficial)-12.29*(txtNivelDisabled);
-    document.getElementById("txtAireRetenido").value = txtAireRetenido;
+    document.getElementById("txtAireRetenido").value = txtAireRetenido.toFixed(2);
     txtFlujoSuperficial = txtAireRetenido * 5.59;
     document.getElementById("txtFlujoSuperficial").value = txtFlujoSuperficial.toFixed(2);
     txtDiametroBurbujas = (6*txtVelocidadSuperficial*10)/txtFlujoSuperficial.toFixed(2);
@@ -934,9 +934,9 @@ function variablesRespuesta(){
     //document.getElementById("alturaCamaEspumante").value = alturaCamaEspumante;
     txtVelocidadDerrame = 6.29+(23.88*txtNivelDisabled)+(9.06*txtVelocidadSuperficial)+(0.204*txtEspumanteVR)-(0.587*txtColectorVR)+(0.456*contenidoPlomo);
 
-    document.getElementById("txtVelocidadDerrame").value = txtVelocidadDerrame;
+    document.getElementById("txtVelocidadDerrame").value = txtVelocidadDerrame.toFixed(2);
     airePerdido = (((txtAireDisabled*Math.pow(100,3))/60)-((txtVelocidadDerrame*txtPerimetroCelda*100*alturaCamaEspumante)))/(Math.pow(100,3))*60
-    document.getElementById("txtJb").value = airePerdido;
+    document.getElementById("txtJb").value = airePerdido.toFixed(2);
     txtAlturaCama = (-36.6-(175.4*txtNivelDisabled)+(0.94*txtColectorVR)+(1.95*txtEspumanteVR)
         +(68.3*txtVelocidadSuperficial)-(7.17*contenidoPlomo)-(390*Math.pow(txtNivelDisabled,2))
         -(0.02542*Math.pow(txtColectorVR,2))-(0.0331*Math.pow(txtEspumanteVR,2))
@@ -946,9 +946,9 @@ function variablesRespuesta(){
         +(0.011*txtColectorVR*txtEspumanteVR)-(1.01*txtColectorVR*txtVelocidadSuperficial)
         +(0.2231*txtColectorVR*contenidoPlomo)-(0.238*txtEspumanteVR*txtVelocidadSuperficial)
         -(0.198*txtEspumanteVR*contenidoPlomo)+(5.09*txtVelocidadSuperficial*contenidoPlomo))*1.1;
-    document.getElementById("txtAlturaCama").value = txtAlturaCama;
+    document.getElementById("txtAlturaCama").value = txtAlturaCama.toFixed(2);
     txtAireRecuperado = (txtVelocidadDerrame*txtPerimetroCelda*100*txtAlturaCama)/((txtAireDisabled*Math.pow(100,3))/60);
-    document.getElementById("txtAireRecuperado").value = txtAireRecuperado;
+    document.getElementById("txtAireRecuperado").value = txtAireRecuperado.toFixed(2);
 
     /*if (txtVelocidadDerrame<=0){
         txtRecuperacionAgua = 0;
@@ -958,7 +958,7 @@ function variablesRespuesta(){
 
     txtRecuperacionAgua = ((toneladasConcentrado)*100/porcentajeSolidos)-toneladasConcentradoUno;
 
-    document.getElementById("txtRecuperacionAgua").value = txtRecuperacionAgua;
+    document.getElementById("txtRecuperacionAgua").value = txtRecuperacionAgua.toFixed(2);
     //print("PORCENTAJE SOLIDOS"+porcentajeSolidos);
 
     txtAireDisabled = document.getElementById("txtAireDisabled").value
@@ -1007,9 +1007,9 @@ function llenarTablaCabeza(){
               table.rows[i].cells[j].innerHTML ="mensaje";
           }*/
 
-          table.rows[vuelta].cells[1].innerHTML =toneladaMineral;
+          table.rows[vuelta].cells[1].innerHTML =document.getElementById("txtTonelajeDisabled").value;
           table.rows[vuelta].cells[2].innerHTML =porcentajeSolidos.toFixed(2);
-          table.rows[vuelta].cells[3].innerHTML =txtTiempoResidencia.toFixed(2);
+          table.rows[vuelta].cells[3].innerHTML =txtTiempoResidencia;
           table.rows[vuelta].cells[4].innerHTML =document.getElementById("txtCabezaOro").value;
           table.rows[vuelta].cells[5].innerHTML =document.getElementById("txtCabezaPlata").value;
           table.rows[vuelta].cells[6].innerHTML =document.getElementById("txtCabezaPlomo").value;

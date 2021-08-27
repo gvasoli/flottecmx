@@ -377,7 +377,7 @@ function keyPSolidos(){
         txtPSolidosDisabled = txtPSolidos;
     }
 
-    document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled.toFixed(2);
+    document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled;
     
 }
 
@@ -581,7 +581,7 @@ function efectoDepresores(){
     efectoDepresoresPlata = efectoZNS04Plata + efectoCianuroPlata;
     efectoCianuroOro = (-15) * (1-Math.exp(-0.07*txtCianuroVR));
     efectoDepresoresOro = efectoZNS04Oro + efectoCianuroOro;
-    efectoZNS04Zinc = (-13 ) * (1-Math.exp(-0.035*txtSulfatoZincVR));
+    efectoZNS04Zinc = (-13 ) * (1-Math.exp(-0.055*txtSulfatoZincVR));
     efectoCianuroZinc = (-6) * (1-Math.exp(-0.1*txtCianuroVR));
     efectoDepresoresZinc = efectoZNS04Zinc + efectoCianuroZinc;
     efectoCianuroFierro = (-7) * (1-Math.exp(-0.2*txtCianuroVR));
@@ -620,10 +620,7 @@ function lineasActualesBases(){
     contenidosPlataCabeza = (txtTonelajeDisabled * cabezaPlata)/1000;
     contenidosPlataConc = contenidosPlataCabeza * recuperacionPlata;
     contenidosPlataCola = contenidosPlataCabeza-contenidosPlataConc;
-
-    print ("CONTENIDOS "+contenidosPlataCabeza+" "+recuperacionPlata);
-
-    
+   
     //plataCola = (contenidosPlataCola)
 
     lineaActualContenidosAu = (-0.124)*(Math.log(contenidoPlomo))+0.5904;
@@ -1040,6 +1037,25 @@ var totalRecuperacionZinc = 0;
 var totalRecuperacionFierro = 0;
 var totalRecuperacionInsoluble = 0;
 
+var totalColaPlomoOro = 0;
+var totalColaPlomoPlata = 0;
+var totalColaPlomoPlomo = 0;
+var totalColaPlomoZinc = 0;
+var totalColaPlomoFierro = 0;
+var totalColaPlomoInsoluble = 0;
+
+var totalZNSO4 = 0;
+var totalColector = 0;
+var totalEspumante = 0;
+var totalNaCN = 0;
+var totalAire = 0;
+var totalJg = 0;
+var totalNivel = 0;
+var totalAireRetenido = 0;
+var totalTamañoBurbujas = 0;
+var totalVelocidadDerrame = 0;
+
+
 function llenarTablaCabeza(){
     table = document.getElementById("tablaCabeza");
     print("tonelada mineral "+toneladaMineral);
@@ -1128,6 +1144,27 @@ function llenarTablaColasPlomo(){
 
 
 }
+
+function llenarTablaHistorico(){
+    table = document.getElementById("tablaHistorico");
+    for(var i = 1; i < 2 ; i++)
+        {
+
+          table.rows[vuelta].cells[1].innerHTML =document.getElementById("txtSulfatoZincVR").value;
+          table.rows[vuelta].cells[2].innerHTML =document.getElementById("txtColectorVR").value;
+          table.rows[vuelta].cells[3].innerHTML =document.getElementById("txtEspumanteVR").value;
+          table.rows[vuelta].cells[4].innerHTML =document.getElementById("txtCianuroVR").value;
+          table.rows[vuelta].cells[5].innerHTML =document.getElementById("txtAire").value;
+          table.rows[vuelta].cells[6].innerHTML =document.getElementById("txtVelocidadSuperficial").value;
+          table.rows[vuelta].cells[7].innerHTML =document.getElementById("txtNivel").value;
+          table.rows[vuelta].cells[8].innerHTML =document.getElementById("txtAireRetenido").value;
+          table.rows[vuelta].cells[9].innerHTML =document.getElementById("txtDiametroBurbujas").value;
+          table.rows[vuelta].cells[10].innerHTML =document.getElementById("txtVelocidadDerrame").value;
+        }
+
+} 
+
+
 var dividendo = 1;
 function calcularTablaCabeza(){
     table = document.getElementById("tablaCabeza");
@@ -1245,6 +1282,93 @@ function calcularTablaLeyConc(){
           table.rows[9].cells[13].innerHTML =totalRecuperacionFierro/dividendo;
           table.rows[9].cells[14].innerHTML =totalRecuperacionInsoluble/dividendo;
         
+}
+
+function calcularTablaColasPlomo(){
+    table = document.getElementById("tablaColasPlomo");
+    totalColaPlomoOro = 0;
+    totalColaPlomoPlata = 0;
+    totalColaPlomoPlomo = 0;
+    totalColaPlomoZinc = 0;
+    totalColaPlomoFierro = 0;
+    totalColaPlomoInsoluble = 0;
+    var valor = 0;
+    
+    for(var j = 1; j < vuelta; j++)
+        
+          {
+              valor = parseFloat(table.rows[j].cells[1].innerHTML);
+              totalColaPlomoOro= totalColaPlomoOro+valor;
+              valor = parseFloat(table.rows[j].cells[2].innerHTML);
+              totalColaPlomoPlata = totalColaPlomoPlata + valor;
+              valor = parseFloat(table.rows[j].cells[3].innerHTML);
+              totalColaPlomoPlomo = totalColaPlomoPlomo + valor;
+              valor = parseFloat(table.rows[j].cells[4].innerHTML);
+              totalColaPlomoZinc = totalColaPlomoZinc + valor;
+              valor = parseFloat(table.rows[j].cells[5].innerHTML);
+              totalColaPlomoFierro = totalColaPlomoFierro + valor;
+              valor = parseFloat(table.rows[j].cells[6].innerHTML);
+              totalColaPlomoInsoluble = totalColaPlomoInsoluble + valor;
+          }
+
+          table.rows[9].cells[1].innerHTML =totalColaPlomoOro/dividendo;
+          table.rows[9].cells[2].innerHTML =totalColaPlomoPlata/dividendo;
+          table.rows[9].cells[3].innerHTML =totalColaPlomoPlomo/dividendo;
+          table.rows[9].cells[4].innerHTML =totalColaPlomoZinc/dividendo;
+          table.rows[9].cells[5].innerHTML =totalColaPlomoFierro/dividendo;
+          table.rows[9].cells[6].innerHTML =totalColaPlomoInsoluble/dividendo;
+          
+}
+function calcularTablaHistorico(){
+    table = document.getElementById("tablaHistorico");
+    totalZNSO4 = 0;
+    totalColector = 0;
+    totalEspumante = 0;
+    totalNaCN = 0;
+    totalAire = 0;
+    totalJg = 0;
+    totalNivel = 0;
+    totalAireRetenido = 0;
+    totalTamañoBurbujas = 0;
+    totalVelocidadDerrame = 0;
+    var valor = 0;
+    
+    for(var j = 1; j < vuelta; j++)
+        
+          {
+              valor = parseFloat(table.rows[j].cells[1].innerHTML);
+              totalZNSO4= totalZNSO4+valor;
+              valor = parseFloat(table.rows[j].cells[2].innerHTML);
+              totalColector = totalColector + valor;
+              valor = parseFloat(table.rows[j].cells[3].innerHTML);
+              totalEspumante = totalEspumante + valor;
+              valor = parseFloat(table.rows[j].cells[4].innerHTML);
+              totalNaCN = totalNaCN + valor;
+              valor = parseFloat(table.rows[j].cells[5].innerHTML);
+              totalAire = totalAire + valor;
+              valor = parseFloat(table.rows[j].cells[6].innerHTML);
+              totalJg = totalJg + valor;
+              valor = parseFloat(table.rows[j].cells[7].innerHTML);
+              totalNivel = totalNivel + valor;
+              valor = parseFloat(table.rows[j].cells[8].innerHTML);
+              totalAireRetenido = totalAireRetenido + valor;
+              valor = parseFloat(table.rows[j].cells[9].innerHTML);
+              totalTamañoBurbujas = totalTamañoBurbujas + valor;
+              valor = parseFloat(table.rows[j].cells[10].innerHTML);
+              totalVelocidadDerrame = totalVelocidadDerrame + valor;
+          }
+
+          table.rows[9].cells[1].innerHTML =totalZNSO4/dividendo;
+          table.rows[9].cells[2].innerHTML =totalColector/dividendo;
+          table.rows[9].cells[3].innerHTML =totalEspumante/dividendo;
+          table.rows[9].cells[4].innerHTML =totalNaCN/dividendo;
+          table.rows[9].cells[5].innerHTML =totalAire/dividendo;
+          table.rows[9].cells[6].innerHTML =totalJg/dividendo;
+          table.rows[9].cells[7].innerHTML =totalNivel/dividendo;
+          table.rows[9].cells[8].innerHTML =totalAireRetenido/dividendo;
+          table.rows[9].cells[9].innerHTML =totalTamañoBurbujas/dividendo;
+          table.rows[9].cells[10].innerHTML =totalVelocidadDerrame/dividendo;
+          
 }
 
 
@@ -1401,8 +1525,11 @@ function setup(){
             if (timemuestreo==120) {
                 llenarTablaLeyConc();
                 llenarTablaColasPlomo();
+                llenarTablaHistorico();
                 llenarTablaCabeza();
+                calcularTablaColasPlomo();
                 calcularTablaLeyConc();
+                calcularTablaHistorico();
                 calcularTablaCabeza();
 
                 alert('Muestra');

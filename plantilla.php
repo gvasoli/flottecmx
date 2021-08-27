@@ -387,10 +387,10 @@
            <div class="card-body">
                <form class="row g-3 needs-validation" novalidate>
                <div class="col-md-3">
-                   <label for="validationCustom02" class="form-label">Tonelaje</label>
+                   <label for="" class="form-label" >Tonelaje</label>
                    <div class="input-group">
 
-         <input type="text" class="form-control" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="360" onchange="keyTonelaje()">
+         <input type="text" class="form-control" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="360" onchange="keyTonelaje()" data-mdb-toggle="tooltip" title="Rango de 320 a 390">
          <input type="text" class="form-control" placeholder="t/hr" id="txtTonelajeDisabled" name="txtTonelajeDisabled" disabled value="">
          <input type="text" class="form-control" placeholder="t/turno" id="txtTonelajeTurnoDisabled" name="txtTonelajeTurnoDisabled" disabled value="0">
        </div>
@@ -409,7 +409,7 @@
            <label for="validationCustom02" class="form-label">% de solidos</label>
            <div class="input-group">
 
-         <input type="text" class="form-control" placeholder="%" id="txtPSolidos" name="txtPSolidos" value="30" onchange="keyPSolidos()">
+         <input type="text" class="form-control" placeholder="%" id="txtPSolidos" name="txtPSolidos" value="30" onchange="keyPSolidos()" data-mdb-toggle="tooltip" title="Rango de 30 a 36">
          <input type="text" class="form-control" placeholder="%" id="txtPSolidosDisabled" name="txtPSolidosDisabled" disabled="">
        </div>
 
@@ -441,7 +441,7 @@
                <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Aire</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" value="12">
+         <input type="text" class="form-control" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 12"value="12">
          <input type="text" class="form-control" placeholder="m^3/min" id="txtAireDisabled" name="txtAireDisabled" value="" disabled="">
        </div>
 
@@ -449,7 +449,7 @@
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Nivel</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="-m" id="txtNivel" onchange="keyNivel()" value="-0.17">
+         <input type="text" class="form-control" placeholder="-m" id="txtNivel" onchange="keyNivel()" value="-0.17" data-mdb-toggle="tooltip" title="Rango de -0.5 a 0">
          <input type="text" class="form-control" placeholder="-m" id="txtNivelDisabled" name="txtNivelDisabled" disabled="">
        </div>
 
@@ -457,7 +457,7 @@
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Colector</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="ml/min" id="txtColectorVC" name="txtColectorVC" onchange="keyColector()" value="1200">
+         <input type="text" class="form-control" placeholder="ml/min" id="txtColectorVC" name="txtColectorVC" onchange="keyColector()" data-mdb-toggle="tooltip" title="Rango de 0 a 1200" value="1200">
          <input type="text" class="form-control" placeholder="ml/min" id="txtColectorVCDisabled"
          name="txtColectorVCDisabled" disabled="">
        </div>
@@ -466,7 +466,7 @@
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">Espumante</label>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="ml/min" id="txtEspumanteVC" name="txtEspumanteVC" value="170" onchange="keyEspumante()">
+              <input type="text" class="form-control" placeholder="ml/min" id="txtEspumanteVC" name="txtEspumanteVC" value="170" onchange="keyEspumante()" data-mdb-toggle="tooltip" title="Rango de 0 a 240">
               <input type="text" class="form-control" placeholder="ml/min" id="txtEspumanteVCDisabled" name="txtEspumanteVCDisabled"disabled="">
             </div>
 
@@ -474,7 +474,7 @@
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Sulfato de Zinc</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="ml/min" id="txtSulfatoZincVC" name="txtSulfatoZincVC" value="2000" onchange="keySulfato()">
+         <input type="text" class="form-control" placeholder="ml/min" id="txtSulfatoZincVC" name="txtSulfatoZincVC" value="2000" onchange="keySulfato()" data-mdb-toggle="tooltip" title="Rango de 0 a 7000">
          <input type="text" class="form-control" placeholder="ml/min" id="txtSulfatoZincVCDisabled" name="txtSulfatoZincVCDisabled" disabled="">
        </div>
 
@@ -482,7 +482,7 @@
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">Cianuro</label>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="ml/min" id="txtCianuroVC" name="txtCianuroVC" value="200" onchange="keyCianuro()">
+              <input type="text" class="form-control" placeholder="ml/min" id="txtCianuroVC" name="txtCianuroVC" value="200" onchange="keyCianuro()" data-mdb-toggle="tooltip" title="Rango de 0 a 900">
               <input type="text" class="form-control" placeholder="ml/min" id="txtCianuroVCDisabled" name="txtCianuroVCDisabled" disabled="">
             </div>
         </div>
@@ -757,7 +757,7 @@
                                  <thead>
                                    <tr class="bg-primary text-white">
                                      <th scope="col">Hora</th>
-                                     <th scope="col">TON Mineral</th>
+                                     <th scope="col" style = "font-size: 0.8rem">Tonelaje Concentrado</th>
                                      <th scope="col">Oro</th>
                                      <th scope="col">Plata</th>
                                      <th scope="col">Plomo</th>
@@ -1223,7 +1223,8 @@
                                      <th>Resultado</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <tD></tD>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>

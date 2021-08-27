@@ -441,7 +441,7 @@
                <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Aire</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 12"value="12">
+         <input type="text" class="form-control" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 19"value="12">
          <input type="text" class="form-control" placeholder="m^3/min" id="txtAireDisabled" name="txtAireDisabled" value="" disabled="">
        </div>
 

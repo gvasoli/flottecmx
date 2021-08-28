@@ -763,14 +763,14 @@
                                      <th scope="col">Plomo</th>
                                      <th scope="col">Zinc</th>
                                      <th scope="col">Fierro</th>
-                                     <th scope="col">Insoluble</th>
-                                     <th scope="col">Aire</th>
-                                     <th scope="col">Oro</th>
-                                     <th scope="col">Plata</th>
-                                     <th scope="col">Plomo</th>
-                                     <th scope="col">Zinc</th>
-                                     <th scope="col">Fierro</th>
-                                     <th scope="col">Insoluble</th>
+                                     <th scope="col" >Insoluble</th>
+                                     <th scope="col" class="bg-warning ">Aire</th>
+                                     <th scope="col" class="bg-warning ">Oro</th>
+                                     <th scope="col" class="bg-warning">Plata</th>
+                                     <th scope="col" class="bg-warning">Plomo</th>
+                                     <th scope="col" class="bg-warning">Zinc</th>
+                                     <th scope="col" class="bg-warning">Fierro</th>
+                                     <th scope="col" class="bg-warning">Insoluble</th>
                                    </tr>
                                  </thead>
                                  <tbody>

@@ -1069,7 +1069,7 @@ function llenarTablaCabeza(){
           }*/
 
           table.rows[vuelta].cells[1].innerHTML =document.getElementById("txtTonelajeDisabled").value;
-          table.rows[vuelta].cells[2].innerHTML =porcentajeSolidos.toFixed(2);
+          table.rows[vuelta].cells[2].innerHTML =document.getElementById("txtPSolidosDisabled").value;
           table.rows[vuelta].cells[3].innerHTML =txtTiempoResidencia;
           table.rows[vuelta].cells[4].innerHTML =document.getElementById("txtCabezaOro").value;
           table.rows[vuelta].cells[5].innerHTML =document.getElementById("txtCabezaPlata").value;
@@ -1097,7 +1097,7 @@ function llenarTablaLeyConc(){
               table.rows[i].cells[j].innerHTML ="mensaje";
           }*/
 
-          table.rows[vuelta].cells[1].innerHTML =toneladaMineral;
+          table.rows[vuelta].cells[1].innerHTML =document.getElementById("txtTonelajeConcentrado").value;
           table.rows[vuelta].cells[2].innerHTML =document.getElementById("txtConcOro").value;
           table.rows[vuelta].cells[3].innerHTML =document.getElementById("txtConcPlata").value;
           table.rows[vuelta].cells[4].innerHTML =document.getElementById("txtConcPlomo").value;

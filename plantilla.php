@@ -187,7 +187,7 @@
       <!-- Start your project here-->
       <div class="jumbotron">
         <div class="card mt-2">
-                   <div class="card-body">
+                   <div class="card-body p-1">
                        <nav>
                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
                            <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Diseño</a>
@@ -810,18 +810,18 @@
                   </div>
                      <div class="card mt-2">
                          <div class="row">
-                             <div class="col">
+                             <div class="col p-1">
                                  <table class="table table-bordered border-primary mb-0" id="tablaLeyConc">
                                  <thead>
                                    <tr class="bg-primary text-white">
                                      <th scope="col">Hora</th>
-                                     <th scope="col" style = "font-size: 0.8rem">Tonelaje Concentrado</th>
-                                     <th scope="col">Oro</th>
-                                     <th scope="col">Plata</th>
-                                     <th scope="col">Plomo</th>
-                                     <th scope="col">Zinc</th>
-                                     <th scope="col">Fierro</th>
-                                     <th scope="col" >Insoluble</th>
+                                     <th scope="col" style = "font-size: 0.7rem">Tonelaje Concentrado</th>
+                                     <th scope="col" style = "font-size: 0.8rem">Oro gr/t</th>
+                                     <th scope="col" style = "font-size: 0.8rem">Plata gr/t</th>
+                                     <th scope="col" style = "font-size: 0.8rem">Plomo %</th>
+                                     <th scope="col" style = "font-size: 0.8rem">Zinc %</th>
+                                     <th scope="col" style = "font-size: 0.8rem">Fierro %</th>
+                                     <th scope="col" style = "font-size: 0.8rem">Insoluble %</th>
                                    </tr>
                                  </thead>
                                  <tbody>
@@ -913,7 +913,7 @@
                                      
                                    </tr>
                                    <tr class="bg-primary text-white">
-                                     <th>Resultado</th>
+                                     <th >Resultado</th>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -928,18 +928,18 @@
                                  </tbody>
                                </table>
                              </div>
-                             <div class="col">
+                             <div class="col p-1">
                                  <table class="table table-bordered border-primary mb-0" id="tablaLeyRec">
                                  <thead>
                                    <tr class="bg-primary text-white">
                                      <th scope="col">Hora</th>
-                                     <th scope="col">Aire</th>
-                                     <th scope="col">Oro</th>
-                                     <th scope="col">Plata</th>
-                                     <th scope="col">Plomo</th>
-                                     <th scope="col">Zinc</th>
-                                     <th scope="col">Fierro</th>
-                                     <th scope="col">Insoluble</th>
+                                     <th scope="col">Aire %</th>
+                                     <th scope="col">Oro %</th>
+                                     <th scope="col">Plata %</th>
+                                     <th scope="col">Plomo %</th>
+                                     <th scope="col">Zinc %</th>
+                                     <th scope="col">Fierro %</th>
+                                     <th scope="col">Insoluble %</th>
                                    </tr>
                                  </thead>
                                  <tbody>
@@ -1206,10 +1206,10 @@
                                  <thead>
                                    <tr class="bg-primary text-white">
                                      <th scope="col">Hora</th>
-                                     <th scope="col">ZnSO4</th>
-                                     <th scope="col">Colector</th>
-                                     <th scope="col">Espumante</th>
-                                     <th scope="col">NaCN</th>
+                                     <th scope="col">ZnSO4 gr/t</th>
+                                     <th scope="col">Colector gr/t</th>
+                                     <th scope="col">Espumante gr/t</th>
+                                     <th scope="col">NaCN gr/t</th>
                                    </tr>
                                  </thead>
                                  <tbody>
@@ -1387,12 +1387,12 @@
                                  <thead>
                                    <tr class="bg-primary text-white">
                                      <th scope="col">Hora</th>
-                                     <th scope="col">Oro</th>
-                                     <th scope="col">Plata</th>
-                                     <th scope="col">Plomo</th>
-                                     <th scope="col">Zinc</th>
-                                     <th scope="col">Fierro</th>
-                                     <th scope="col">Insoluble</th>
+                                     <th scope="col">Oro %</th>
+                                     <th scope="col">Plata %</th>
+                                     <th scope="col">Plomo %</th>
+                                     <th scope="col">Zinc %</th>
+                                     <th scope="col">Fierro %</th>
+                                     <th scope="col">Insoluble %</th>
                                      
                                    </tr>
                                  </thead>

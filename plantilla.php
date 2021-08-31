@@ -604,25 +604,20 @@
              <div class="tab-pane fade" id="nav-res" role="tabpanel" aria-labelledby="nav-res-tab">
                  <div class="card-body" style="border: 1px solid #dee2e6;">
                   <div class="row">
-                <div class="col"></div>
-                <div class="col text-center"><h5>Cabeza</h5></div>
-              </div>
+                  <div class="col"></div>
+                  <div class="col text-center"><h5>Cabeza</h5></div>
+                </div>
                      <div class="card mt-2">
                          <div class="row">
-                             <div class="col">
-                                 <table class="table table-bordered border-primary mb-0" id="tablaCabeza">
+                             <div class="col-6">
+                                 <table class="table table-bordered border-primary mb-0" id="tablaResultado">
                                  <thead>
-                                   <tr class="bg-primary text-white">
+                                   <tr class="bg-primary text-white p-0">
                                      <th scope="col">Hora</th>
                                      <th scope="col">TON Mineral</th>
                                      <th scope="col">% Solidos</th>
                                      <th scope="col">Tiempo de Residencia (min)</th>
-                                     <th scope="col">Oro</th>
-                                     <th scope="col">Plata</th>
-                                     <th scope="col">Plomo</th>
-                                     <th scope="col">Zinc</th>
-                                     <th scope="col">Fierro</th>
-                                     <th scope="col">Insoluble</th>
+                                  
                                    </tr>
                                  </thead>
                                  <tbody>
@@ -631,6 +626,93 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
+
+
+                                   </tr>
+                                   <tr>
+                                     <th>2:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+
+
+                                   </tr>
+                                   <tr>
+                                     <th>3:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+
+
+                                   </tr>
+                                   <tr>
+                                     <th>4:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+
+
+                                   </tr>
+                                   <tr>
+                                     <th>5:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+
+                                    
+                                   </tr>
+                                   <tr>
+                                     <th>6:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+
+                                     
+                                   </tr>
+                                   <tr>
+                                     <th>7:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+
+                                     
+                                   </tr>
+                                   <tr>
+                                     <th>8:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+
+                                    
+                                   </tr>
+                                   <tr class="bg-primary text-white">
+                                     <th>Resultado</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                    
+                                   </tr>
+
+
+                                 </tbody>
+                               </table>
+                             </div>
+                             <div class="col ps-0">
+                               <table class="table table-bordered mb-0  border-primary" id="tablaCabeza">
+                                 <thead>
+                                   <tr class="text-white p-0 bg-primary">
+                                     <th scope="col">Hora</th>
+                                     <th scope="col">Oro gr/t</th>
+                                     <th scope="col">Plata gr/t</th>
+                                     <th scope="col">Plomo %</th>
+                                     <th scope="col">Zinc %</th>
+                                     <th scope="col">Fierro %</th>
+                                     <th scope="col">Insoluble %</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                     <th>1:00</th>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -647,15 +729,9 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                    </tr>
                                    <tr>
-                                     <th>3:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                    <th>3:00</th>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -664,10 +740,7 @@
                                      <td></td>
                                    </tr>
                                    <tr>
-                                     <th>4:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                    <th>4:00</th>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -683,9 +756,6 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                    </tr>
                                    <tr>
                                      <th>6:00</th>
@@ -695,15 +765,9 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                    </tr>
                                    <tr>
-                                     <th>7:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                    <th>7:00</th>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -719,15 +783,9 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                    </tr>
-                                   <tr class="bg-primary text-white">
+                                   <tr class="text-white bg-primary">
                                      <th>Resultado</th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -764,13 +822,6 @@
                                      <th scope="col">Zinc</th>
                                      <th scope="col">Fierro</th>
                                      <th scope="col" >Insoluble</th>
-                                     <th scope="col" class="bg-warning ">Aire</th>
-                                     <th scope="col" class="bg-warning ">Oro</th>
-                                     <th scope="col" class="bg-warning">Plata</th>
-                                     <th scope="col" class="bg-warning">Plomo</th>
-                                     <th scope="col" class="bg-warning">Zinc</th>
-                                     <th scope="col" class="bg-warning">Fierro</th>
-                                     <th scope="col" class="bg-warning">Insoluble</th>
                                    </tr>
                                  </thead>
                                  <tbody>
@@ -783,25 +834,9 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     
-
                                    </tr>
                                    <tr>
                                      <th>2:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -820,24 +855,10 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      
                                    </tr>
                                    <tr>
                                      <th>4:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -856,24 +877,10 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      
                                    </tr>
                                    <tr>
                                      <th>6:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -892,24 +899,10 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      
                                    </tr>
                                    <tr>
                                      <th>8:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -928,6 +921,117 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
+                                     
+                                   </tr>
+
+
+                                 </tbody>
+                               </table>
+                             </div>
+                             <div class="col">
+                                 <table class="table table-bordered border-primary mb-0" id="tablaLeyRec">
+                                 <thead>
+                                   <tr class="bg-primary text-white">
+                                     <th scope="col">Hora</th>
+                                     <th scope="col">Aire</th>
+                                     <th scope="col">Oro</th>
+                                     <th scope="col">Plata</th>
+                                     <th scope="col">Plomo</th>
+                                     <th scope="col">Zinc</th>
+                                     <th scope="col">Fierro</th>
+                                     <th scope="col">Insoluble</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                     <th>1:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     
+                                   </tr>
+                                   <tr>
+                                     <th>2:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr>
+                                     <th>3:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     
+                                   </tr>
+                                   <tr>
+                                     <th>4:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     
+                                   </tr>
+                                   <tr>
+                                     <th>5:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     
+                                   </tr>
+                                   <tr>
+                                     <th>6:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     
+                                   </tr>
+                                   <tr>
+                                     <th>7:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     
+                                   </tr>
+                                   <tr>
+                                     <th>8:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     
+                                   </tr>
+                                   <tr class="bg-primary text-white">
+                                     <th>Resultado</th>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -954,7 +1058,7 @@
                   </div>
                      <div class="card mt-2">
                          <div class="row">
-                             <div class="col">
+                             <div class="col ps-0">
                                  <table class="table table-bordered border-primary mb-0">
                                  <thead>
                                    <tr class="bg-primary text-white">
@@ -975,7 +1079,7 @@
                                      <th>1:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -988,7 +1092,7 @@
                                      <th>2:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1000,7 +1104,7 @@
                                      <th>3:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1012,7 +1116,7 @@
                                      <th>4:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1024,7 +1128,7 @@
                                      <th>5:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1036,7 +1140,7 @@
                                      <th>6:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1048,7 +1152,7 @@
                                      <th>7:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1060,7 +1164,7 @@
                                      <th>8:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1072,7 +1176,7 @@
                                      <th>Resultado</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
+                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1106,7 +1210,82 @@
                                      <th scope="col">Colector</th>
                                      <th scope="col">Espumante</th>
                                      <th scope="col">NaCN</th>
-                                     <th scope="col">m3/min</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                     <th>1:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr>
+                                     <th>2:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr>
+                                     <th>3:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr>
+                                     <th>4:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr>
+                                     <th>5:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr>
+                                     <th>6:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr>
+                                     <th>7:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr>
+                                     <th>8:00</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+                                   <tr class="bg-primary text-white">
+                                     <th>Resultado</th>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                     <td></td>
+                                   </tr>
+
+
+                                 </tbody>
+                               </table>
+                             </div>
+                             <div class="col ps-0">
+                                 <table class="table table-bordered border-primary mb-0" id="tablaAire">
+                                 <thead>
+                                   <tr class="bg-primary text-white">
+                                     <th scope="col">Hora</th>
                                      <th scope="col">Jg</th>
                                      <th scope="col">Nivel</th>
                                      <th scope="col">Aire Retenido</th>
@@ -1122,19 +1301,9 @@
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                    </tr>
                                    <tr>
                                      <th>2:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <th></th>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1145,22 +1314,12 @@
                                      <th>3:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
                                    </tr>
                                    <tr>
                                      <th>4:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <th></th>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1171,22 +1330,12 @@
                                      <th>5:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
                                    </tr>
                                    <tr>
                                      <th>6:00</th>
-                                     <td></td>
-                                     <td></td>
-                                     <th></th>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1197,11 +1346,6 @@
                                      <th>7:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
@@ -1210,22 +1354,12 @@
                                      <th>8:00</th>
                                      <td></td>
                                      <td></td>
-                                     <th></th>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>
                                    </tr>
                                    <tr class="bg-primary text-white">
                                      <th>Resultado</th>
-                                     <td></td>
-                                     <td></td>
-                                     <tD></tD>
-                                     <td></td>
-                                     <td></td>
                                      <td></td>
                                      <td></td>
                                      <td></td>

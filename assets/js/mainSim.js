@@ -274,8 +274,8 @@ var vuelta = 2;
 var txtTonelaje = document.getElementById("txtTonelaje").value;
 
 function keyTonelaje(){
-    var txtTonelaje = document.getElementById("txtTonelaje").value;
-    var txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
+    txtTonelaje = document.getElementById("txtTonelaje").value;
+    txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
     if (txtTonelaje>390) {
         txtTonelaje = 390;
     } else if (txtTonelaje<320){
@@ -354,8 +354,8 @@ function keyDiametroCelda(){
 }
 
 function keyPSolidos(){
-    var txtTonelaje = document.getElementById("txtTonelaje").value;
-    var txtPSolidos = document.getElementById("txtPSolidos").value;
+    txtTonelaje = document.getElementById("txtTonelaje").value;
+    txtPSolidos = document.getElementById("txtPSolidos").value;
     if (txtTonelaje>390) {
         txtTonelaje = 390;
     } else if (txtTonelaje<320){
@@ -378,6 +378,11 @@ function keyPSolidos(){
     }
 
     document.getElementById("txtPSolidosDisabled").value = txtPSolidosDisabled;
+    keyTonelaje();
+    variablesRespuesta();
+    /*efectoDepresores();
+    lineasActualesBases();
+    toneladasConcentrados();*/
     
 }
 

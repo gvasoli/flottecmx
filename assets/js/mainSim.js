@@ -777,9 +777,6 @@ function lineasActualesBases(){
     
 }
 
-
-
-
 function valoresContenidos(){
     var txtTonelajeDisabled = document.getElementById("txtTonelajeDisabled").value;
     cabezaOro = -0.4686+(1.501*plomoCabeza);
@@ -881,12 +878,24 @@ function ensaye(){
     document.getElementById("txtConcZinc").value = leyConcZinc.toFixed(2);
     document.getElementById("txtConcFierro").value = leyConcFierro.toFixed(2);
     document.getElementById("txtConcInsoluble").value = leyConcInsoluble.toFixed(2);
-    if (txtTonelajeConcentrado=0) {
+    print("SSSSS "+txtTonelajeConcentrado);
+
+    if (isNaN(colaOro)) {
         colaOro = cabezaOro;
+    }
+    if (isNaN(colaPlata)) {
         colaPlata = cabezaPlata;
+    }
+    if (isNaN(colaPlomo)) {
         colaPlomo = plomoCabeza;
+    }
+    if (isNaN(colaZinc)) {
         colaZinc = cabezaZinc;
+    }
+    if (isNaN(colaFierro)) {
         colaFierro = cabezaFierro;
+    }
+    if (isNaN(colaInsoluble)) {
         colaInsoluble = cabezaInsoluble;
     }
     document.getElementById("txtColaOro").value = colaOro.toFixed(2);
@@ -990,7 +999,9 @@ function variablesRespuesta(){
     }*/
 
     txtRecuperacionAgua = ((toneladasConcentrado)*100/porcentajeSolidos)-toneladasConcentradoUno;
-
+    if (isNaN(txtRecuperacionAgua)) {
+        txtRecuperacionAgua = 0;
+    }
     document.getElementById("txtRecuperacionAgua").value = txtRecuperacionAgua.toFixed(2);
     //print("PORCENTAJE SOLIDOS"+porcentajeSolidos);
 
@@ -1419,6 +1430,10 @@ function toneladasConcentrados(){
     toneladaMineral = (counterH*txtTonelajeDisabled)/60;
     print("TONELADA MINERAL "+toneladaMineral);
     toneladaCola = txtTonelajeDisabled - toneladasConcentradoUno;
+    
+    if(isNaN(toneladasConcentrado)){
+        toneladasConcentrado = 0;
+    }
 
     document.getElementById("txtTonelajeConcentrado").value = toneladasConcentrado.toFixed(2);
 

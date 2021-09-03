@@ -582,13 +582,14 @@ function efectoDepresores(){
 
 
     efectoZNS04Plata = (-4 ) * (1-Math.exp(-0.03*txtSulfatoZincVR));
-    efectoCianuroPlata = (-10) * (1-Math.exp(-0.01*txtCianuroVR));
+    efectoCianuroPlata = (-10) * (1-Math.exp(-0.1*txtCianuroVR));
     efectoDepresoresPlata = efectoZNS04Plata + efectoCianuroPlata;
     efectoCianuroOro = (-15) * (1-Math.exp(-0.09*txtCianuroVR));
     efectoDepresoresOro = efectoZNS04Oro + efectoCianuroOro;
     efectoZNS04Zinc = (-13 ) * (1-Math.exp(-0.055*txtSulfatoZincVR));
     efectoCianuroZinc = (-6) * (1-Math.exp(-0.12*txtCianuroVR));
     efectoDepresoresZinc = efectoZNS04Zinc + efectoCianuroZinc;
+    alert(efectoCianuroZinc);
     efectoCianuroFierro = (-7) * (1-Math.exp(-0.3*txtCianuroVR));
     efectoDepresoresFierro = efectoZNS04Fierro + efectoCianuroFierro;
     

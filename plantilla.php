@@ -261,38 +261,38 @@
            <div class="card-body">
                <form class="row g-3 needs-validation" novalidate>
                <div class="col-md-2">
-                   <label for="validationCustom01" class="form-label">Presupuestos de costo</label>
-                   <input type="text" class="form-control" id="validationCustom01" required placeholder="dlls">
+                   <label for="" class="form-label">Presupuestos de costo</label>
+                   <input type="text" class="form-control" id="txtPresupuestoCosto" required placeholder="dlls" value="1500">
 
            </div>
          <div class="col-md-2">
-           <label for="validationCustom02" style = "font-size: 0.99rem"class="form-label">Presupuestos de ganancias</label>
-           <input type="text" class="form-control" id="validationCustom02" required placeholder="dlls">
+           <label for="" style = "font-size: 0.99rem"class="form-label">Presupuestos de ganancias</label>
+           <input type="text" class="form-control" id="txtPresupuestoGanancias" required placeholder="dlls" value="240000">
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Costo por tonelada molida</label>
-           <input type="text" class="form-control" id="validationCustom02" required placeholder="dlls/t">
+           <label for="" class="form-label">Costo por tonelada molida</label>
+           <input type="text" class="form-control" id="txtCostoToneladaMolida" required placeholder="dlls/t" value="150">
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Precio depresor</label>
-           <input type="text" class="form-control" id="validationCustom02" required placeholder="dlls/kg">
+           <label for="" class="form-label">Precio depresor</label>
+           <input type="text" class="form-control" id="txtPrecioDepresor" required placeholder="dlls/kg" value="0.89">
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Precio colector</label>
-           <input type="text" class="form-control" id="validationCustom02"  required placeholder="dlls/kg">
+           <label for="" class="form-label">Precio colector</label>
+           <input type="text" class="form-control" id="txtPrecioColector"  required placeholder="dlls/kg" value="5.15">
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Precio espumante</label>
-           <input type="text" class="form-control" id="validationCustom02"  required placeholder="dlls/kg">
+           <label for="" class="form-label">Precio espumante</label>
+           <input type="text" class="form-control" id="txtPrecioEspumante"  required placeholder="dlls/kg"value="3.2">
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Precio cianuro</label>
-           <input type="text" class="form-control" id="validationCustom02" required placeholder="dlls/kg">
+           <label for="" class="form-label">Precio cianuro</label>
+           <input type="text" class="form-control" id="txtPrecioCianuro" required placeholder="dlls/kg" value="4">
 
          </div>
        </form>
@@ -336,38 +336,37 @@
            <div class="card-body">
                <form class="row g-3 needs-validation" novalidate>
                <div class="col-md-1">
-                   <label for="validationCustom01" class="form-label">Onza oro</label>
-                   <input type="text" class="form-control" id="validationCustom01" required placeholder="dlls">
+                   <label for="" class="form-label">Onza oro</label>
+                   <input type="text" class="form-control" id="txtOnzaOro" required placeholder="dlls" value="1700">
 
            </div>
          <div class="col-md-1">
-           <label for="validationCustom02" class="form-label">Onza plata</label>
-           <input type="text" class="form-control" id="validationCustom02" required placeholder="dlls">
+           <label for="" class="form-label">Onza plata</label>
+           <input type="text" class="form-control" id="txtOnzaPlata" required placeholder="dlls"
+value="15.20"
+           >
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Libra plomo</label>
-           <input type="text" class="form-control" id="validationCustom02" required placeholder="dlls">
+           <label for="" class="form-label">Libra plomo</label>
+           <input type="text" class="form-control" id="txtLibraPlomo" required placeholder="dlls" value="0.74">
 
          </div>
          <div class="col-md-3">
-           <label for="validationCustom02" class="form-label">% Humedad del concentrado</label>
-           <input type="text" class="form-control" id="validationCustom02" required placeholder="%">
+           <label for="" class="form-label">% Humedad del concentrado</label>
+           <input type="text" class="form-control" id="txtHumedadConcentrado" required placeholder="%" value="12">
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Costo del flete ($/TM)</label>
-           <input type="text" class="form-control" id="validationCustom02"  required placeholder="dlls/t">
+           <label for="" class="form-label">Costo del flete ($/TM)</label>
+           <input type="text" class="form-control" id="txtCostoFlete"  required placeholder="dlls/t" value="129">
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Maquila ($/TM)</label>
-           <input type="text" class="form-control" id="validationCustom02"  required placeholder="dlls/t">
-
-         </div>
-         <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Precio cianuro</label>
-           <input type="text" class="form-control" id="validationCustom02" required placeholder="dlls/kg">
+           <label for="" class="form-label">Maquila ($/TM)</label>
+           <input type="text" class="form-control" id="txtMaquila"  required placeholder="dlls/t"
+           value="224" 
+           >
 
          </div>
        </form>

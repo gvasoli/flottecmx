@@ -589,7 +589,7 @@ function efectoDepresores(){
     efectoZNS04Zinc = (-13 ) * (1-Math.exp(-0.055*txtSulfatoZincVR));
     efectoCianuroZinc = (-6) * (1-Math.exp(-0.12*txtCianuroVR));
     efectoDepresoresZinc = efectoZNS04Zinc + efectoCianuroZinc;
-    alert(efectoCianuroZinc);
+    //alert(efectoCianuroZinc);
     efectoCianuroFierro = (-7) * (1-Math.exp(-0.3*txtCianuroVR));
     efectoDepresoresFierro = efectoZNS04Fierro + efectoCianuroFierro;
     
@@ -1443,6 +1443,53 @@ function toneladasConcentrados(){
     print('TONELAJE DOS: '+toneladasConcentradoDos);
     print('TONELAJE TRES: '+toneladasConcentradoTres);
     print('PORCENTAJE : '+porcentajeSolidos);
+}
+
+var oroEnsaye = 0;
+var plataEnsaye = 0;
+var plomoEnsaye = 0;
+var ensayeNetoOro = 0;
+var ensayeNetoPlata = 0;
+var ensayeNetoPlomo = 0;
+var txtHumedadConcentrado = document.getElementById("txtHumedadConcentrado").value;
+var toneladasHumedas = 0;
+var humedadPorcentaje = 0;
+var cotizacionPromedioOro = 0;
+var cotizacionPromedioPlata = 0;
+var cotizacionPromedioPlomo = 0;
+
+function presupuestos(){
+    oroEnsaye = document.getElementById("txtConcOro").value;
+    plataEnsaye = document.getElementById("txtConcPlata").value;
+    plomoEnsaye = document.getElementById("txtConcPlomo").value;
+    txtHumedadConcentrado = document.getElementById("txtHumedadConcentrado").value;
+    txtTonelajeConcentrado = document.getElementById("txtTonelajeConcentrado").value;
+
+    if (oroEnsaye<=1) {
+        ensayeNetoOro = 0;
+    } else if (oroEnsaye<=20){
+        ensayeNetoOro = ensayeNetoOro-1;
+    } else {
+        ensayeNetoOro = oroEnsaye * 0.95;
+    }
+
+    if (plataEnsaye<=50) {
+        ensayeNetoPlata = 0;
+    } else if (plataEnsaye<=1000){
+        ensayeNetoOro = ((plataEnsaye-50)/1000);
+    } else {
+        ensayeNetoOro = (plataEnsaye*0.95)/1000;
+    }
+
+    if ((plomoEnsaye*0.95)<(plomoEnsaye-3)) {
+        ensayeNetoPlomo = plomoEnsaye*0.95;
+    }  else {
+        ensayeNetoPlomo = ((plomoEnsaye-3)/100)*1000;
+    }
+
+    toneladasHumedas  = (txtTonelajeConcentrado*100)/(100-txtHumedadConcentrado);
+    humedadPorcentaje = ((toneladasHumedas - txtTonelajeConcentrado) / toneladasHumedas);
+
 }
 
 

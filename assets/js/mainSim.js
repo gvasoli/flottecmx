@@ -1182,7 +1182,9 @@ function llenarTablaHistorico(){
           tabla.rows[vuelta].cells[5].innerHTML =document.getElementById("txtVelocidadDerrame").value;
         }
 
-} 
+}
+
+
 
 
 var dividendo = 1;
@@ -1457,6 +1459,40 @@ var humedadPorcentaje = 0;
 var cotizacionPromedioOro = 0;
 var cotizacionPromedioPlata = 0;
 var cotizacionPromedioPlomo = 0;
+var txtPresupuestoCosto = 0;
+var txtPresupuestoGanancias = 0;
+
+var txtOnzaOro = 0;
+var txtOnzaPlata = 0;
+var txtLibraPlomo = 0;
+
+var valorToneladasOro = 0;
+var valorToneladasPlata = 0;
+var valorToneladasPlomo = 0;
+var valorTotalOro = 0;
+var valorTotalPlata = 0;
+var valorTotalPlomo = 0;
+
+var sumaValorToneladas = 0;
+var sumaValorTotal = 0;
+var txtMaquila = 0;
+var tratamiento = 0;
+
+var castigoZinc = 0;
+var castigoInsoluble = 0;
+var sumaCastigos = 0;
+var totalCastigos = 0;
+
+var fleteOrigenDestino = 0;
+var fleteOrigenDestinoToneladas = 0;
+var fleteOrigenDestinoTotal = 0;
+
+var sumaTotalDeduccionesToneladas = 0;
+var sumaTotalDeduccionesTotal = 0;
+
+var valorNetoLiquidacionToneladas = 0;
+var valorNetoLiquidacionTotal = 0;
+
 
 function presupuestos(){
     oroEnsaye = document.getElementById("txtConcOro").value;
@@ -1464,6 +1500,14 @@ function presupuestos(){
     plomoEnsaye = document.getElementById("txtConcPlomo").value;
     txtHumedadConcentrado = document.getElementById("txtHumedadConcentrado").value;
     txtTonelajeConcentrado = document.getElementById("txtTonelajeConcentrado").value;
+    txtOnzaOro = document.getElementById("txtOnzaOro").value;
+    txtOnzaPlata = document.getElementById("txtOnzaPlata").value;
+    txtLibraPlomo = document.getElementById("txtLibraPlomo").value;
+    txtMaquila = document.getElementById("txtMaquila").value;
+    leyConcZinc = document.getElementById("txtConcZinc").value;
+    leyConcInsoluble = document.getElementById("txtConcInsoluble").value;
+    fleteOrigenDestino = document.getElementById("txtCostoFlete").value;
+
 
     if (oroEnsaye<=1) {
         ensayeNetoOro = 0;
@@ -1476,9 +1520,9 @@ function presupuestos(){
     if (plataEnsaye<=50) {
         ensayeNetoPlata = 0;
     } else if (plataEnsaye<=1000){
-        ensayeNetoOro = ((plataEnsaye-50)/1000);
+        ensayeNetoPlata = ((plataEnsaye-50)/1000);
     } else {
-        ensayeNetoOro = (plataEnsaye*0.95)/1000;
+        ensayeNetoPlata = (plataEnsaye*0.95)/1000;
     }
 
     if ((plomoEnsaye*0.95)<(plomoEnsaye-3)) {
@@ -1487,10 +1531,94 @@ function presupuestos(){
         ensayeNetoPlomo = ((plomoEnsaye-3)/100)*1000;
     }
 
+    //txtTonelajeConcentrado = document.getElementById("txtTonelajeConcentrado").value;
+
     toneladasHumedas  = (txtTonelajeConcentrado*100)/(100-txtHumedadConcentrado);
     humedadPorcentaje = ((toneladasHumedas - txtTonelajeConcentrado) / toneladasHumedas);
 
+    cotizacionPromedioOro = txtOnzaOro/32.1507432;
+    cotizacionPromedioPlata = txtOnzaPlata*32.1507432 
+
+    if (txtLibraPlomo<=0) {
+        cotizacionPromedioPlomo = 0;
+    } else {
+        cotizacionPromedioPlomo = (txtLibraPlomo-0.01)*2.20462;
+    }
+
+    valorToneladasOro = ensayeNetoOro*cotizacionPromedioOro;
+    valorToneladasPlata = ensayeNetoPlata*cotizacionPromedioPlata;
+    valorToneladasPlomo = ensayeNetoPlomo*cotizacionPromedioPlomo;
+
+    sumaValorToneladas = valorToneladasOro+valorToneladasPlata+valorToneladasPlomo;
+
+    valorTotalOro = valorToneladasOro*txtTonelajeConcentrado;
+    valorTotalPlata = valorToneladasPlata*txtTonelajeConcentrado;
+    valorTotalPlomo = valorToneladasPlomo*txtTonelajeConcentrado;
+
+    sumaValorTotal = valorTotalOro+valorTotalPlata+valorTotalPlomo;
+
+    tratamiento = txtMaquila * txtTonelajeConcentrado;
+
+    
+
+    if (leyConcZinc<=3) {
+        castigoZinc = 0;
+    } else if (leyConcZinc<=11){
+        castigoZinc = (leyConcZinc-5)*40;
+    } else {
+        castigoZinc = ((leyConcZinc-8)*80)+(3*2.5);
+    }
+
+    if (leyConcInsoluble<=10) {
+        castigoInsoluble = 0;
+    } else if (leyConcInsoluble<=15){
+        castigoInsoluble = (leyConcInsoluble-5)*5;
+    } else {
+        castigoInsoluble = ((leyConcInsoluble-8)*10)+(3*2.5);
+    }
+
+    sumaCastigos = castigoZinc + castigoInsoluble;
+    totalCastigos = sumaCastigos * txtTonelajeConcentrado;
+
+    fleteOrigenDestinoToneladas = fleteOrigenDestino/((txtHumedadConcentrado/100)/(1-(humedadPorcentaje/100)));
+//txtTonelajeConcentrado = document.getElementById("txtTonelajeConcentrado").value;
+    
+    if (txtTonelajeConcentrado==0) {
+        fleteOrigenDestinoTotal = 0;
+    } else {
+        fleteOrigenDestinoTotal = fleteOrigenDestinoToneladas * txtTonelajeConcentrado;
+    }
+//alert("PRESUPUESSS "+fleteOrigenDestinoTotal);
+    sumaTotalDeduccionesToneladas = txtMaquila+sumaCastigos+fleteOrigenDestinoToneladas;
+    sumaTotalDeduccionesTotal = tratamiento+totalCastigos+fleteOrigenDestinoTotal;
+
+    valorNetoLiquidacionToneladas = sumaValorToneladas - sumaTotalDeduccionesToneladas;
+    valorNetoLiquidacionTotal = sumaValorTotal - sumaTotalDeduccionesTotal;
+    
+
 }
+
+function llenarTablaFinanciero(){
+    tabla = document.getElementById("tablaFinancieros");
+    for(var i = 1; i < 2 ; i++)
+        {
+
+          tabla.rows[vuelta].cells[1].innerHTML =valorTotalOro.toFixed(2);
+          tabla.rows[vuelta].cells[2].innerHTML =valorTotalPlata.toFixed(2);
+          tabla.rows[vuelta].cells[3].innerHTML =valorTotalPlomo.toFixed(2);
+          tabla.rows[vuelta].cells[4].innerHTML =castigoZinc.toFixed(2);
+          tabla.rows[vuelta].cells[5].innerHTML =castigoInsoluble.toFixed(2);
+          tabla.rows[vuelta].cells[6].innerHTML =fleteOrigenDestinoTotal.toFixed(2);
+          tabla.rows[vuelta].cells[7].innerHTML =tratamiento.toFixed(2);
+          /*tabla.rows[vuelta].cells[2].innerHTML =document.getElementById("txtNivel").value;
+          tabla.rows[vuelta].cells[3].innerHTML =document.getElementById("txtAireRetenido").value;
+          tabla.rows[vuelta].cells[4].innerHTML =document.getElementById("txtDiametroBurbujas").value;
+          tabla.rows[vuelta].cells[5].innerHTML =document.getElementById("txtVelocidadDerrame").value;*/
+        }
+
+        //alert("mensaj");
+
+} 
 
 
 
@@ -1511,6 +1639,7 @@ function setup(){
     variablesRespuesta();
     dimensionesCelda();
     ensaye();
+    presupuestos();
     noCanvas();
     var timer = select('#reloj');
     var timerH = select('#relojHora');
@@ -1526,6 +1655,7 @@ function setup(){
         //efectoDepresores();
        // lineasActualesBases();
         //llenarTablaCabeza();
+        //llenarTablaFinanciero();
         if (x=='Empezar') {
             if (marcha==1) {
                 marcha = 0;
@@ -1584,6 +1714,7 @@ function setup(){
             variablesRespuesta();
             toneladasMineral();
             toneladasConcentrados();
+            presupuestos();
             ensaye();
             if (!(counterH % 1)) {
                 timerH.html(convertSeconds(counterH));
@@ -1599,6 +1730,7 @@ function setup(){
                 llenarTablaLeyConc();
                 llenarTablaColasPlomo();
                 llenarTablaHistorico();
+                llenarTablaFinanciero();
                 llenarTablaCabeza();
                 calcularTablaColasPlomo();
                 calcularTablaLeyConc();

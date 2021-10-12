@@ -1073,6 +1073,16 @@ var totalAireRetenido = 0;
 var totalTamañoBurbujas = 0;
 var totalVelocidadDerrame = 0;
 
+var totalOro = 0;
+var totalPlata = 0;
+var totalPlomo = 0;
+var totalZinc = 0;
+var totalInsoluble = 0;
+var totalFlete = 0;
+var totalMaquila = 0;
+var totalPresupuesto = 0;
+var totalGanancias = 0;
+
 
 function llenarTablaCabeza(){
     tabla = document.getElementById("tablaResultado");
@@ -1395,6 +1405,55 @@ function calcularTablaHistorico(){
           
 }
 
+function calcularTablaFinancieros(){
+    table = document.getElementById("tablaFinancieros");
+    totalOro = 0;
+    totalPlata = 0;
+    totalPlomo = 0;
+    totalZinc = 0;
+    totalInsoluble = 0;
+    totalFlete = 0;
+    totalMaquila = 0;
+    totalPresupuesto = 0;
+    totalGanancias = 0;
+    var valor = 0;
+    
+    for(var j = 1; j < vuelta; j++)
+        
+          {
+              valor = parseFloat(table.rows[j].cells[1].innerHTML);
+              totalOro= totalOro+valor;
+              valor = parseFloat(table.rows[j].cells[2].innerHTML);
+              totalPlata = totalPlata + valor;
+              valor = parseFloat(table.rows[j].cells[3].innerHTML);
+              totalPlomo = totalPlomo + valor;
+              valor = parseFloat(table.rows[j].cells[4].innerHTML);
+              totalZinc = totalZinc + valor;
+              valor = parseFloat(table.rows[j].cells[5].innerHTML);
+              totalInsoluble = totalInsoluble + valor;
+              valor = parseFloat(table.rows[j].cells[6].innerHTML);
+              totalFlete = totalFlete + valor;
+              valor = parseFloat(table.rows[j].cells[7].innerHTML);
+              totalMaquila = totalMaquila + valor;
+              valor = parseFloat(table.rows[j].cells[8].innerHTML);
+              totalPresupuesto = totalPresupuesto + valor;
+              valor = parseFloat(table.rows[j].cells[9].innerHTML);
+              totalGanancias = totalGanancias + valor;
+              
+          }
+
+          table.rows[9].cells[1].innerHTML =(totalOro/dividendo).toFixed(2);;
+          table.rows[9].cells[2].innerHTML =(totalPlata/dividendo).toFixed(2);;
+          table.rows[9].cells[3].innerHTML =(totalPlomo/dividendo).toFixed(2);;
+          table.rows[9].cells[4].innerHTML =(totalZinc/dividendo).toFixed(2);;
+          table.rows[9].cells[5].innerHTML =(totalInsoluble/dividendo).toFixed(2);;
+          table.rows[9].cells[6].innerHTML =(totalFlete/dividendo).toFixed(2);;
+          table.rows[9].cells[7].innerHTML =(totalMaquila/dividendo).toFixed(2);;
+          table.rows[9].cells[8].innerHTML =(totalPresupuesto/dividendo).toFixed(2);;
+          table.rows[9].cells[9].innerHTML =(totalGanancias/dividendo).toFixed(2);;
+          
+}
+
 
 
 function toneladasMineral(){
@@ -1610,6 +1669,8 @@ function llenarTablaFinanciero(){
           tabla.rows[vuelta].cells[5].innerHTML =castigoInsoluble.toFixed(2);
           tabla.rows[vuelta].cells[6].innerHTML =fleteOrigenDestinoTotal.toFixed(2);
           tabla.rows[vuelta].cells[7].innerHTML =tratamiento.toFixed(2);
+          tabla.rows[vuelta].cells[8].innerHTML =document.getElementById("txtPresupuestoGanancias").value;
+          tabla.rows[vuelta].cells[9].innerHTML =valorNetoLiquidacionTotal.toFixed(2);
           /*tabla.rows[vuelta].cells[2].innerHTML =document.getElementById("txtNivel").value;
           tabla.rows[vuelta].cells[3].innerHTML =document.getElementById("txtAireRetenido").value;
           tabla.rows[vuelta].cells[4].innerHTML =document.getElementById("txtDiametroBurbujas").value;
@@ -1736,6 +1797,7 @@ function setup(){
                 calcularTablaLeyConc();
                 calcularTablaHistorico();
                 calcularTablaCabeza();
+                calcularTablaFinancieros();
 
                 alert('Muestra');
                 timemuestreo = 0;

@@ -46,7 +46,7 @@
                       </div>
 
                    <div class="m-1">
-                  <input type="button" id="btnResetTiempo" value="Reset Tiempo" name="boton2" class="btn btn-secondary btn-rounded" style="width: 100%;" />
+                  <input type="button" id="btnResetTiempo" value="Reiniciar" name="boton2" class="btn btn-secondary btn-rounded" style="width: 100%;" />
 
                   </div>
                   <div class="m-1 text-white">
@@ -389,7 +389,7 @@ value="15.20"
                    <label for="" class="form-label" >Tonelaje</label>
                    <div class="input-group">
 
-         <input type="text" class="form-control" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="360" onchange="keyTonelaje()" data-mdb-toggle="tooltip" title="Rango de 320 a 390">
+         <input type="text" class="form-control" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="320" onchange="keyTonelaje()" data-mdb-toggle="tooltip" title="Rango de 320 a 390">
          <input type="text" class="form-control" placeholder="t/hr" id="txtTonelajeDisabled" name="txtTonelajeDisabled" disabled value="">
          <input type="text" class="form-control" placeholder="t/turno" id="txtTonelajeTurnoDisabled" name="txtTonelajeTurnoDisabled" disabled value="0">
        </div>
@@ -440,7 +440,7 @@ value="15.20"
                <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Aire</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 19"value="12">
+         <input type="text" class="form-control" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 19"value="1">
          <input type="text" class="form-control" placeholder="m^3/min" id="txtAireDisabled" name="txtAireDisabled" value="" disabled="">
        </div>
 
@@ -448,7 +448,7 @@ value="15.20"
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Nivel</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="-m" id="txtNivel" onchange="keyNivel()" value="-0.17" data-mdb-toggle="tooltip" title="Rango de -0.5 a 0">
+         <input type="text" class="form-control" placeholder="-m" id="txtNivel" onchange="keyNivel()" value="-0.5" data-mdb-toggle="tooltip" title="Rango de -0.5 a 0">
          <input type="text" class="form-control" placeholder="-m" id="txtNivelDisabled" name="txtNivelDisabled" disabled="">
        </div>
 
@@ -456,7 +456,7 @@ value="15.20"
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Colector</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="ml/min" id="txtColectorVC" name="txtColectorVC" onchange="keyColector()" data-mdb-toggle="tooltip" title="Rango de 0 a 1200" value="1200">
+         <input type="text" class="form-control" placeholder="ml/min" id="txtColectorVC" name="txtColectorVC" onchange="keyColector()" data-mdb-toggle="tooltip" title="Rango de 0 a 1200" value="0">
          <input type="text" class="form-control" placeholder="ml/min" id="txtColectorVCDisabled"
          name="txtColectorVCDisabled" disabled="">
        </div>
@@ -465,7 +465,7 @@ value="15.20"
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">Espumante</label>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="ml/min" id="txtEspumanteVC" name="txtEspumanteVC" value="170" onchange="keyEspumante()" data-mdb-toggle="tooltip" title="Rango de 0 a 240">
+              <input type="text" class="form-control" placeholder="ml/min" id="txtEspumanteVC" name="txtEspumanteVC" value="0" onchange="keyEspumante()" data-mdb-toggle="tooltip" title="Rango de 0 a 240">
               <input type="text" class="form-control" placeholder="ml/min" id="txtEspumanteVCDisabled" name="txtEspumanteVCDisabled"disabled="">
             </div>
 
@@ -473,7 +473,7 @@ value="15.20"
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Sulfato de Zinc</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="ml/min" id="txtSulfatoZincVC" name="txtSulfatoZincVC" value="2000" onchange="keySulfato()" data-mdb-toggle="tooltip" title="Rango de 0 a 7000">
+         <input type="text" class="form-control" placeholder="ml/min" id="txtSulfatoZincVC" name="txtSulfatoZincVC" value="0" onchange="keySulfato()" data-mdb-toggle="tooltip" title="Rango de 0 a 7000">
          <input type="text" class="form-control" placeholder="ml/min" id="txtSulfatoZincVCDisabled" name="txtSulfatoZincVCDisabled" disabled="">
        </div>
 
@@ -481,7 +481,7 @@ value="15.20"
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">Cianuro</label>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="ml/min" id="txtCianuroVC" name="txtCianuroVC" value="200" onchange="keyCianuro()" data-mdb-toggle="tooltip" title="Rango de 0 a 900">
+              <input type="text" class="form-control" placeholder="ml/min" id="txtCianuroVC" name="txtCianuroVC" value="0" onchange="keyCianuro()" data-mdb-toggle="tooltip" title="Rango de 0 a 900">
               <input type="text" class="form-control" placeholder="ml/min" id="txtCianuroVCDisabled" name="txtCianuroVCDisabled" disabled="">
             </div>
         </div>
@@ -1053,7 +1053,8 @@ value="15.20"
                  <div class="card-body" style="border: 1px solid #dee2e6;">
                   <div class="row">
                     <div class="col text-center"><h5>Ingresos por elemento</h5></div>
-                <div class="col text-center"><h5></h5></div>
+                    <div class="col text-center"><h5>Costos</h5></div>
+                    <div class="col text-center"><h5></h5></div>
                   </div>
                      <div class="card mt-2">
                          <div class="row">
@@ -1076,99 +1077,99 @@ value="15.20"
                                  <tbody>
                                    <tr>
                                      <th>1:00</th>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                    <tr>
                                      <th>2:00</th>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                    <tr>
                                      <th>3:00</th>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                    <tr>
                                      <th>4:00</th>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                    <tr>
                                      <th>5:00</th>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                    <tr>
                                      <th>6:00</th>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                    <tr>
                                      <th>7:00</th>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                    <tr>
                                      <th>8:00</th>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-success"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
+                                     <td class="text-danger"></td>
                                      <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                    <tr class="bg-primary text-white">
                                      <th>Resultado</th>
@@ -1180,7 +1181,7 @@ value="15.20"
                                      <td></td>
                                      <td></td>
                                      <td></td>
-                                     <td></td>
+                                     <th></th>
                                    </tr>
                                  </tbody>
                                </table>

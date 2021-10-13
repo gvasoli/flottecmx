@@ -1135,8 +1135,8 @@ function llenarTablaLeyConc(){
           table.rows[vuelta].cells[6].innerHTML =document.getElementById("txtConcFierro").value;
           table.rows[vuelta].cells[7].innerHTML =document.getElementById("txtConcInsoluble").value;
           tabla.rows[vuelta].cells[1].innerHTML =document.getElementById("txtAireRecuperado").value;
-          tabla.rows[vuelta].cells[2].innerHTML =recuperacionOro.toFixed(2)*100;
-          tabla.rows[vuelta].cells[3].innerHTML =recuperacionPlata.toFixed(2)*100;
+          tabla.rows[vuelta].cells[2].innerHTML =(recuperacionOro*100).toFixed(2);
+          tabla.rows[vuelta].cells[3].innerHTML =(recuperacionPlata*100).toFixed(2);
           tabla.rows[vuelta].cells[4].innerHTML =recuperacionPlomo.toFixed(2)*100;
           tabla.rows[vuelta].cells[5].innerHTML =recuperacionZinc.toFixed(2)*100;
           tabla.rows[vuelta].cells[6].innerHTML =recuperacionFierro.toFixed(2)*100;
@@ -1442,15 +1442,15 @@ function calcularTablaFinancieros(){
               
           }
 
-          table.rows[9].cells[1].innerHTML =(totalOro/dividendo).toFixed(2);;
-          table.rows[9].cells[2].innerHTML =(totalPlata/dividendo).toFixed(2);;
-          table.rows[9].cells[3].innerHTML =(totalPlomo/dividendo).toFixed(2);;
-          table.rows[9].cells[4].innerHTML =(totalZinc/dividendo).toFixed(2);;
-          table.rows[9].cells[5].innerHTML =(totalInsoluble/dividendo).toFixed(2);;
-          table.rows[9].cells[6].innerHTML =(totalFlete/dividendo).toFixed(2);;
-          table.rows[9].cells[7].innerHTML =(totalMaquila/dividendo).toFixed(2);;
-          table.rows[9].cells[8].innerHTML =(totalPresupuesto/dividendo).toFixed(2);;
-          table.rows[9].cells[9].innerHTML =(totalGanancias/dividendo).toFixed(2);;
+          table.rows[9].cells[1].innerHTML =(totalOro/dividendo).toFixed();
+          table.rows[9].cells[2].innerHTML =(totalPlata/dividendo).toFixed();
+          table.rows[9].cells[3].innerHTML =(totalPlomo/dividendo).toFixed();
+          table.rows[9].cells[4].innerHTML =(totalZinc/dividendo).toFixed();
+          table.rows[9].cells[5].innerHTML =(totalInsoluble/dividendo).toFixed();
+          table.rows[9].cells[6].innerHTML =(totalFlete/dividendo).toFixed();
+          table.rows[9].cells[7].innerHTML =(totalMaquila/dividendo).toFixed();
+          table.rows[9].cells[8].innerHTML =(totalPresupuesto/dividendo).toFixed();
+          table.rows[9].cells[9].innerHTML =(totalGanancias/dividendo).toFixed();
           
 }
 
@@ -1659,18 +1659,27 @@ function presupuestos(){
 
 function llenarTablaFinanciero(){
     tabla = document.getElementById("tablaFinancieros");
+    var tds = tabla.getElementsByTagName("td");
     for(var i = 1; i < 2 ; i++)
         {
+            txtPresupuestoGanancias = document.getElementById("txtPresupuestoGanancias").value
+          tabla.rows[vuelta].cells[1].innerHTML =valorTotalOro.toFixed();
+          tabla.rows[vuelta].cells[2].innerHTML =valorTotalPlata.toFixed();
+          tabla.rows[vuelta].cells[3].innerHTML =valorTotalPlomo.toFixed();
+          tabla.rows[vuelta].cells[4].innerHTML =castigoZinc.toFixed();
+          tabla.rows[vuelta].cells[5].innerHTML =castigoInsoluble.toFixed();
+          tabla.rows[vuelta].cells[6].innerHTML =fleteOrigenDestinoTotal.toFixed();
+          tabla.rows[vuelta].cells[7].innerHTML =tratamiento.toFixed();
+          tabla.rows[vuelta].cells[8].innerHTML =txtPresupuestoGanancias;
+          tabla.rows[vuelta].cells[9].innerHTML =valorNetoLiquidacionTotal.toFixed();
 
-          tabla.rows[vuelta].cells[1].innerHTML =valorTotalOro.toFixed(2);
-          tabla.rows[vuelta].cells[2].innerHTML =valorTotalPlata.toFixed(2);
-          tabla.rows[vuelta].cells[3].innerHTML =valorTotalPlomo.toFixed(2);
-          tabla.rows[vuelta].cells[4].innerHTML =castigoZinc.toFixed(2);
-          tabla.rows[vuelta].cells[5].innerHTML =castigoInsoluble.toFixed(2);
-          tabla.rows[vuelta].cells[6].innerHTML =fleteOrigenDestinoTotal.toFixed(2);
-          tabla.rows[vuelta].cells[7].innerHTML =tratamiento.toFixed(2);
-          tabla.rows[vuelta].cells[8].innerHTML =document.getElementById("txtPresupuestoGanancias").value;
-          tabla.rows[vuelta].cells[9].innerHTML =valorNetoLiquidacionTotal.toFixed(2);
+          if (valorNetoLiquidacionTotal<0) {
+            tabla.rows[vuelta].cells[9].style.color = "#F93154";
+          } else {
+            tabla.rows[vuelta].cells[9].style.color = "#00B74A";
+            //tds[9].style.color = "#99C78A";
+            //tabla.rows[vuelta].cells[9].addClass('text-danger');
+          }
           /*tabla.rows[vuelta].cells[2].innerHTML =document.getElementById("txtNivel").value;
           tabla.rows[vuelta].cells[3].innerHTML =document.getElementById("txtAireRetenido").value;
           tabla.rows[vuelta].cells[4].innerHTML =document.getElementById("txtDiametroBurbujas").value;

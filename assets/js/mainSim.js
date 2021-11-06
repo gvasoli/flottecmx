@@ -1137,10 +1137,10 @@ function llenarTablaLeyConc(){
           tabla.rows[vuelta].cells[1].innerHTML =document.getElementById("txtAireRecuperado").value;
           tabla.rows[vuelta].cells[2].innerHTML =(recuperacionOro*100).toFixed(2);
           tabla.rows[vuelta].cells[3].innerHTML =(recuperacionPlata*100).toFixed(2);
-          tabla.rows[vuelta].cells[4].innerHTML =recuperacionPlomo.toFixed(2)*100;
-          tabla.rows[vuelta].cells[5].innerHTML =recuperacionZinc.toFixed(2)*100;
-          tabla.rows[vuelta].cells[6].innerHTML =recuperacionFierro.toFixed(2)*100;
-          tabla.rows[vuelta].cells[7].innerHTML =recuperacionInsoluble.toFixed(2)*100;
+          tabla.rows[vuelta].cells[4].innerHTML =(recuperacionPlomo*100).toFixed(2);
+          tabla.rows[vuelta].cells[5].innerHTML =(recuperacionZinc*100).toFixed(2);
+          tabla.rows[vuelta].cells[6].innerHTML =(recuperacionFierro*100).toFixed(2);
+          tabla.rows[vuelta].cells[7].innerHTML =(recuperacionInsoluble*100).toFixed(2);
 
         }
 
@@ -1755,7 +1755,7 @@ function setup(){
     };
 
     document.getElementById('btnResetTiempo').onclick = function() {
-        marcha = 1;
+        /*marcha = 1;
         counterH = 0;
         counter = 0;
         timemuestreo = 0;
@@ -1764,9 +1764,12 @@ function setup(){
         document.getElementById("btnEmpezar").value = "Empezar";
         timer.html(convertSeconds(timeleft));
         timerH.html(convertSeconds(0));
-        print('Resetsstts'+counter);
+        print('Resetsstts'+counter);*/
+        location.reload(true);
        
     };
+
+
         
     function timeIt(){
         if (marcha==0) {
@@ -1808,7 +1811,7 @@ function setup(){
                 calcularTablaCabeza();
                 calcularTablaFinancieros();
 
-                alert('Muestra');
+                //alert('Muestra');
                 timemuestreo = 0;
                 
                 

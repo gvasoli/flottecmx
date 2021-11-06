@@ -64,7 +64,7 @@
       <div class=" m-0">
            <div class="">
                <form class="row needs-validation text-white" novalidate>
-               <div class="col-md-2 text-center">
+               <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Oro</label>
                    <div class="row">
                      <div class="col pe-0 px-1">
@@ -75,13 +75,13 @@
                         <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcOro" name="txtConcOro" required placeholder="gr/t" disabled="true">
                       </div>
-                     <div class="col pe-0 px-1">
+                     <div class="col px-1">
                       <label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaOro" name="txtColaOro" required placeholder="gr/t" disabled="true">
                       </div>
                    </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Plata</label>
                    <div class="row">
                      <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
@@ -91,12 +91,12 @@
                         <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcPlata" name="txtConcPlata" required placeholder="gr/t" disabled="true">
                       </div>
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaPlata" name="txtColaPlata" required placeholder="gr/t" disabled="true">
                       </div>
                    </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Plomo</label>
                    <div class="row">
                      <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
@@ -106,12 +106,12 @@
                         <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcPlomo" name="txtConcPlomo" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaPlomo" name="txtColaPlomo" required placeholder="%" disabled="true">
                       </div>
                    </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Zinc</label>
                    <div class="row">
                      <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
@@ -121,12 +121,12 @@
                         <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcZinc" name="txtConcZinc" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaZinc" name="txtColaZinc" required placeholder="%" disabled="true">
                       </div>
                    </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Fierro</label>
                    <div class="row">
                      <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
@@ -136,12 +136,12 @@
                         <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcFierro" name="txtConcFierro" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaFierro" name="txtColaFierro" required placeholder="%" disabled="true">
                       </div>
                    </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-2 text-center border pb-1">
                    <label for="validationCustom01" class="" >Insoluble</label>
                    <div class="row">
                      <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
@@ -151,7 +151,7 @@
                         <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcInsoluble" name="txtConcInsoluble" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaInsoluble" name="txtColaInsoluble" required placeholder="%" disabled="true">
                       </div>
                    </div>
@@ -267,7 +267,7 @@
            </div>
          <div class="col-md-2">
            <label for="" style = "font-size: 0.99rem"class="form-label">Presupuestos de ganancias</label>
-           <input type="text" class="form-control" id="txtPresupuestoGanancias" required placeholder="dlls" value="240000">
+           <input type="text" class="form-control" id="txtPresupuestoGanancias" required placeholder="dlls" value="24000">
 
          </div>
          <div class="col-md-2">
@@ -1063,14 +1063,14 @@ value="15.20"
                                  <thead>
                                    <tr class="bg-primary text-white">
                                      <th scope="col">Hora</th>
-                                     <th scope="col">Oro</th>
-                                     <th scope="col">Plata</th>
-                                     <th scope="col">Plomo</th>
-                                     <th scope="col">Zinc</th>
-                                     <th scope="col">Insoluble</th>
-                                     <th scope="col">Flete</th>
-                                     <th scope="col">Maquila</th>
-                                     <th scope="col">Presupuesto</th>
+                                     <th scope="col">Oro USD</th>
+                                     <th scope="col">Plata USD</th>
+                                     <th scope="col">Plomo USD</th>
+                                     <th scope="col">Zinc USD</th>
+                                     <th scope="col">Insoluble USD</th>
+                                     <th scope="col">Flete USD</th>
+                                     <th scope="col">Maquila USD</th>
+                                     <th scope="col">Presupuesto USD</th>
                                      <th scope="col">Ganancias USD</th>
                                    </tr>
                                  </thead>
@@ -1384,8 +1384,8 @@ value="15.20"
                                  <thead>
                                    <tr class="bg-primary text-white">
                                      <th scope="col">Hora</th>
-                                     <th scope="col">Oro %</th>
-                                     <th scope="col">Plata %</th>
+                                     <th scope="col">Oro gr/t</th>
+                                     <th scope="col">Plata gr/t</th>
                                      <th scope="col">Plomo %</th>
                                      <th scope="col">Zinc %</th>
                                      <th scope="col">Fierro %</th>

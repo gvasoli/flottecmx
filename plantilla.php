@@ -68,30 +68,40 @@
                    <label for="validationCustom01" class="">Oro</label>
                    <div class="row">
                      <div class="col pe-0 px-1">
-                        <label for="" class="" style="font-size: 0.9rem">Cabeza</label>
+                        <label for="" class="d-block" style="font-size: 0.9rem">Cabeza</label>
+                        
+                        <label for="" class="d-block" style="font-size: 0.7rem">gr/t</label>
                         <input type="text" class="form-control p-1 text-center" id="txtCabezaOro" name="txtCabezaOro" required placeholder="gr/t" disabled="true">
                       </div>
                       <div class="col-md-4 pe-0 px-1">
-                        <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="" class="d-block" style="font-size: 0.7rem">gr/t</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcOro" name="txtConcOro" required placeholder="gr/t" disabled="true">
                       </div>
                      <div class="col px-1">
-                      <label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cola</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">gr/t</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaOro" name="txtColaOro" required placeholder="gr/t" disabled="true">
                       </div>
                    </div>
+
                 </div>
                 <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Plata</label>
                    <div class="row">
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
+                     <div class="col pe-0 px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cabeza</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">gr/t</label>
                         <input type="text" class="form-control p-1 text-center" id="txtCabezaPlata" name="txtCabezaPlata" required placeholder="gr/t" disabled="true">
                       </div>
                       <div class="col-md-4 pe-0 px-1">
-                        <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="" class="d-block" style="font-size: 0.7rem">gr/t</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcPlata" name="txtConcPlata" required placeholder="gr/t" disabled="true">
                       </div>
-                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cola</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">gr/t</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaPlata" name="txtColaPlata" required placeholder="gr/t" disabled="true">
                       </div>
                    </div>
@@ -99,14 +109,19 @@
                 <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Plomo</label>
                    <div class="row">
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
+                     <div class="col pe-0 px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cabeza</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                         <input type="text" class="form-control p-1 text-center" id="txtCabezaPlomo" name="txtCabezaPlomo" required placeholder="%" disabled="true">
                       </div>
                       <div class="col-md-4 pe-0 px-1">
-                        <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcPlomo" name="txtConcPlomo" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cola</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaPlomo" name="txtColaPlomo" required placeholder="%" disabled="true">
                       </div>
                    </div>
@@ -114,14 +129,19 @@
                 <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Zinc</label>
                    <div class="row">
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
+                     <div class="col pe-0 px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cabeza</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                         <input type="text" class="form-control p-1 text-center" id="txtCabezaZinc" name="txtCabezaZinc" required placeholder="%" disabled="true">
                       </div>
                       <div class="col-md-4 pe-0 px-1">
-                        <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcZinc" name="txtConcZinc" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cola</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaZinc" name="txtColaZinc" required placeholder="%" disabled="true">
                       </div>
                    </div>
@@ -129,14 +149,20 @@
                 <div class="col-md-2 text-center border border-end-0 pb-1">
                    <label for="validationCustom01" class="">Fierro</label>
                    <div class="row">
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
-                        <input type="text" class="form-control p-1 text-center" id="txtCabezaFierro" name="txtCabezaFierro" required placeholder="%" disabled="true">
+                     <div class="col pe-0 px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cabeza</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">%</label>
+                      <input type="text" class="form-control p-1 text-center" id="txtCabezaFierro" name="txtCabezaFierro" required placeholder="%" disabled="true">
+                        
                       </div>
                       <div class="col-md-4 pe-0 px-1">
-                        <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcFierro" name="txtConcFierro" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cola</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaFierro" name="txtColaFierro" required placeholder="%" disabled="true">
                       </div>
                    </div>
@@ -144,14 +170,19 @@
                 <div class="col-md-2 text-center border pb-1">
                    <label for="validationCustom01" class="" >Insoluble</label>
                    <div class="row">
-                     <div class="col pe-0 px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cabeza</label>
+                     <div class="col pe-0 px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cabeza</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                         <input type="text" class="form-control p-1 text-center" id="txtCabezaInsoluble" name="txtCabezaInsoluble" required placeholder="%" disabled="true">
                       </div>
                       <div class="col-md-4 pe-0 px-1">
-                        <label for="validationCustom02" class="" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Ley Conc.</label>
+                        <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                           <input type="text" class="form-control p-1 text-center" id="txtConcInsoluble" name="txtConcInsoluble" required placeholder="%" disabled="true">
                       </div>
-                     <div class="col px-1"><label for="validationCustom02" class="" style="font-size: 0.9rem">Cola</label>
+                     <div class="col px-1">
+                      <label for="validationCustom02" class="d-block" style="font-size: 0.9rem">Cola</label>
+                      <label for="" class="d-block" style="font-size: 0.7rem">%</label>
                         <input type="text" class="form-control p-1 text-center" id="txtColaInsoluble" name="txtColaInsoluble" required placeholder="%" disabled="true">
                       </div>
                    </div>
@@ -389,18 +420,22 @@ value="15.20"
                    <label for="" class="form-label" >Tonelaje</label>
                    <div class="input-group">
 
-         <input type="text" class="form-control" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="320" onchange="keyTonelaje()" data-mdb-toggle="tooltip" title="Rango de 320 a 390">
-         <input type="text" class="form-control" placeholder="t/hr" id="txtTonelajeDisabled" name="txtTonelajeDisabled" disabled value="">
-         <input type="text" class="form-control" placeholder="t/turno" id="txtTonelajeTurnoDisabled" name="txtTonelajeTurnoDisabled" disabled value="0">
+         <input type="text" class="form-control p-1 text-center" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="320" onchange="keyTonelaje()" data-mdb-toggle="tooltip" title="Rango de 320 a 390">
+         <input type="text" class="form-control p-1 text-center" placeholder="t/hr" id="txtTonelajeDisabled" name="txtTonelajeDisabled" disabled value="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="t/hr" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="t/turno" id="txtTonelajeTurnoDisabled" name="txtTonelajeTurnoDisabled" disabled value="0">
+         <input type="text" class="form-control p-1" id="" name="" value="t/turno" disabled="">
        </div>
 
            </div>
-         <div class="col-md-2">
+         <div class="col-md-3">
            <label for="validationCustom02" class="form-label">Agua</label>
            <div class="input-group">
 
-         <input type="text" class="form-control" placeholder="m^3/hr" id="txtAguaHora" name="txtAguaHora" disabled="">
-         <input type="text" class="form-control" placeholder="m^3/turno" id="txtAguaTurno" name="txtAguaTurno" value="0" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3/hr" id="txtAguaHora" name="txtAguaHora" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="m^3/hr" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3/turno" id="txtAguaTurno" name="txtAguaTurno" value="0" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="m^3/turno" disabled="">
        </div>
 
          </div>
@@ -408,24 +443,34 @@ value="15.20"
            <label for="validationCustom02" class="form-label">% de solidos</label>
            <div class="input-group">
 
-         <input type="text" class="form-control" placeholder="%" id="txtPSolidos" name="txtPSolidos" value="30" onchange="keyPSolidos()" data-mdb-toggle="tooltip" title="Rango de 30 a 36">
-         <input type="text" class="form-control" placeholder="%" id="txtPSolidosDisabled" name="txtPSolidosDisabled" disabled="">
+         <input type="text" class="form-control text-center" placeholder="%" id="txtPSolidos" name="txtPSolidos" value="30" onchange="keyPSolidos()" data-mdb-toggle="tooltip" title="Rango de 30 a 36">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="%" disabled="">
+         <input type="text" class="form-control text-center" placeholder="%" id="txtPSolidosDisabled" name="txtPSolidosDisabled" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="%" disabled="">
        </div>
 
          </div>
-         <div class="col-md-2">
+         <div class="col-md-3">
            <label for="validationCustom02" class="form-label">Volumen de pulpa</label>
            <div class="input-group">
 
-         <input type="text" class="form-control" placeholder="m^3/hr" id="txtVolumenPulpaHora" name="txtVolumenPulpaHora" disabled="">
-         <input type="text" class="form-control" placeholder="m^3/turno" id="txtVolumenPulpaTurno" name="txtVolumenPulpaTurno" disabled="" value="0">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3/hr" id="txtVolumenPulpaHora" name="txtVolumenPulpaHora" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="m^3/hr" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3/turno" id="txtVolumenPulpaTurno" name="txtVolumenPulpaTurno" disabled="" value="0">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="m^3/turno" disabled="">
        </div>
 
          </div>
          <div class="col-md-2">
-           <label for="validationCustom02" class="form-label">Tiempo de residencia</label>
+          <label for="" class="form-label">Tiempo de residencia</label>
+          <div class="input-group">
+            
            <input type="text" class="form-control" id="txtTiempoResidencia" name="txtTiempoResidencia"  required placeholder="min" value="11" disabled="">
+           <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="min" disabled="">
+          </div>
+           
          </div>
+
        </form>
            </div>
 
@@ -440,49 +485,56 @@ value="15.20"
                <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Aire</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 19"value="1">
-         <input type="text" class="form-control" placeholder="m^3/min" id="txtAireDisabled" name="txtAireDisabled" value="" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 19"value="1">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3/min" id="txtAireDisabled" name="txtAireDisabled" value="" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="m^3/min" disabled="">
        </div>
 
            </div>
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Nivel</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="-m" id="txtNivel" onchange="keyNivel()" value="-0.5" data-mdb-toggle="tooltip" title="Rango de -0.5 a 0">
-         <input type="text" class="form-control" placeholder="-m" id="txtNivelDisabled" name="txtNivelDisabled" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="-m" id="txtNivel" onchange="keyNivel()" value="-0.5" data-mdb-toggle="tooltip" title="Rango de -0.5 a 0">
+         <input type="text" class="form-control p-1 text-center" placeholder="-m" id="txtNivelDisabled" name="txtNivelDisabled" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="-m" disabled="">
        </div>
 
            </div>
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Colector</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="ml/min" id="txtColectorVC" name="txtColectorVC" onchange="keyColector()" data-mdb-toggle="tooltip" title="Rango de 0 a 1200" value="0">
-         <input type="text" class="form-control" placeholder="ml/min" id="txtColectorVCDisabled"
+         <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtColectorVC" name="txtColectorVC" onchange="keyColector()" data-mdb-toggle="tooltip" title="Rango de 0 a 1200" value="0">
+         <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtColectorVCDisabled"
          name="txtColectorVCDisabled" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="ml/min" disabled="">
+
        </div>
 
            </div>
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">Espumante</label>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="ml/min" id="txtEspumanteVC" name="txtEspumanteVC" value="0" onchange="keyEspumante()" data-mdb-toggle="tooltip" title="Rango de 0 a 240">
-              <input type="text" class="form-control" placeholder="ml/min" id="txtEspumanteVCDisabled" name="txtEspumanteVCDisabled"disabled="">
+              <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtEspumanteVC" name="txtEspumanteVC" value="0" onchange="keyEspumante()" data-mdb-toggle="tooltip" title="Rango de 0 a 240">
+              <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtEspumanteVCDisabled" name="txtEspumanteVCDisabled"disabled="">
+              <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="ml/min" disabled="">
             </div>
 
            </div>
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Sulfato de Zinc</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="ml/min" id="txtSulfatoZincVC" name="txtSulfatoZincVC" value="0" onchange="keySulfato()" data-mdb-toggle="tooltip" title="Rango de 0 a 7000">
-         <input type="text" class="form-control" placeholder="ml/min" id="txtSulfatoZincVCDisabled" name="txtSulfatoZincVCDisabled" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtSulfatoZincVC" name="txtSulfatoZincVC" value="0" onchange="keySulfato()" data-mdb-toggle="tooltip" title="Rango de 0 a 7000">
+         <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtSulfatoZincVCDisabled" name="txtSulfatoZincVCDisabled" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="ml/min" disabled="">
        </div>
 
            </div>
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">Cianuro</label>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="ml/min" id="txtCianuroVC" name="txtCianuroVC" value="0" onchange="keyCianuro()" data-mdb-toggle="tooltip" title="Rango de 0 a 900">
-              <input type="text" class="form-control" placeholder="ml/min" id="txtCianuroVCDisabled" name="txtCianuroVCDisabled" disabled="">
+              <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtCianuroVC" name="txtCianuroVC" value="0" onchange="keyCianuro()" data-mdb-toggle="tooltip" title="Rango de 0 a 900">
+              <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtCianuroVCDisabled" name="txtCianuroVCDisabled" disabled="">
+              <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="ml/min" disabled="">
             </div>
         </div>
            
@@ -499,88 +551,98 @@ value="15.20"
                <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Velocidad de Derrame</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="cm/s" id="txtVelocidadDerrame" name="txtVelocidadDerrame" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="cm/s" id="txtVelocidadDerrame" name="txtVelocidadDerrame" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="cm/s" disabled="">
        </div>
 
            </div>
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Aire retenido</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="%" id="txtAireRetenido" name="txtAireRetenido" value="10.97" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="%" id="txtAireRetenido" name="txtAireRetenido" value="10.97" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="%" disabled="">
        </div>
 
            </div>
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Recuperacion de agua</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="m^3" id="txtRecuperacionAgua" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3" id="txtRecuperacionAgua" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="m^3" disabled="">
        </div>
 
            </div>
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Velocidad superficial jg</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="cm/s" id="txtVelocidadSuperficial" name="txtVelocidadSuperficial" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="cm/s" id="txtVelocidadSuperficial" name="txtVelocidadSuperficial" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="cm/s" disabled="">
        </div>
 
            </div>
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Flujo superficial de gas</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="s^-1" id="txtFlujoSuperficial" name="txtFlujoSuperficial" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="s^-1" id="txtFlujoSuperficial" name="txtFlujoSuperficial" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="s^-1" disabled="">
        </div>
 
            </div>
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Diametro de las burbujas</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="mm" id="txtDiametroBurbujas" name="txtDiametroBurbujas" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="mm" id="txtDiametroBurbujas" name="txtDiametroBurbujas" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="mm" disabled="">
        </div>
 
            </div>
           <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Aire recuperado</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="%" id="txtAireRecuperado" name="txtAireRecuperado" disabled="">
-         <input type="text" class="form-control" placeholder="%" id="txtAireRecuperadoP" name="txtAireRecuperadoP" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="%" id="txtAireRecuperado" name="txtAireRecuperado" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="%" id="txtAireRecuperadoP" name="txtAireRecuperadoP" disabled="">
        </div>
 
            </div>
            <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">jb</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="m^3/min" id="txtJb" name="txtJb" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3/min" id="txtJb" name="txtJb" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="m^3/min" disabled="">
        </div>
 
            </div>
            <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Altura cama sobre labio</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="cm" id="txtAlturaCama" name="txtAlturaCama" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="cm" id="txtAlturaCama" name="txtAlturaCama" 
+         disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="cm" disabled="">
+
        </div>
 
            </div>
            <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Colector</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="gr/t" id="txtColectorVR" name="txtColectorVR" disabled="">
-        <input type="text" class="form-control" placeholder="ppm" id="" name="" value="gr/t" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="gr/t" id="txtColectorVR" name="txtColectorVR" disabled="">
+        <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="gr/t" disabled="">
        </div>
 
            </div>
            <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Espumante</label>
                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="ppm" id="txtEspumanteVR" name="txtEspumanteVR" value="10.93" disabled="">
-                      <input type="text" class="form-control" placeholder="ppm" id="" name="" value="PPM" disabled="">
+                      <input type="text" class="form-control p-1 text-center" placeholder="ppm" id="txtEspumanteVR" name="txtEspumanteVR" value="10.93" disabled="">
+                      <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="PPM" disabled="">
                 </div>
 
            </div>
            <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Sulfato de Zinc</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="gr/t" id="txtSulfatoZincVR" name="txtSulfatoZincVR" disabled="">
-         <input type="text" class="form-control" placeholder="ppm" id="" name="" value="gr/t" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="gr/t" id="txtSulfatoZincVR" name="txtSulfatoZincVR" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="gr/t" disabled="">
          
        </div>
 
@@ -588,8 +650,8 @@ value="15.20"
            <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Cianuro</label>
                    <div class="input-group">
-         <input type="text" class="form-control" placeholder="gr/t" id="txtCianuroVR" name="txtCianuroVR" disabled="">
-         <input type="text" class="form-control" placeholder="ppm" id="" name="" value="gr/t" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="gr/t" id="txtCianuroVR" name="txtCianuroVR" disabled="">
+         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="gr/t" disabled="">
          
        </div>
 
@@ -1194,7 +1256,7 @@ value="15.20"
                  <div class="card-body" style="border: 1px solid #dee2e6;">
                   <div class="row">
                     <div class="col text-center"><h5>Reactivos</h5></div>
-                <div class="col text-center"><h5>Aire</h5></div>
+                <div class="col text-center"><h5>Valores hidrodinámicos</h5></div>
                   </div>
                      <div class="card mt-2">
                          <div class="row">
@@ -1283,11 +1345,11 @@ value="15.20"
                                  <thead>
                                    <tr class="bg-primary text-white">
                                      <th scope="col">Hora</th>
-                                     <th scope="col">Jg</th>
-                                     <th scope="col">Nivel</th>
-                                     <th scope="col">Aire Retenido</th>
-                                     <th scope="col">Tamaño de Burbujas</th>
-                                     <th scope="col">Velocidad de Derrame</th>
+                                     <th scope="col">Jg cm/s</th>
+                                     <th scope="col">Nivel m</th>
+                                     <th scope="col">Aire Retenido %</th>
+                                     <th scope="col">Tamaño de Burbujas mm</th>
+                                     <th scope="col">Velocidad de Derrame cm/s</th>
                                    </tr>
                                  </thead>
                                  <tbody>

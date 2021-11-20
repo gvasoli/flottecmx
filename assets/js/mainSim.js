@@ -322,6 +322,8 @@ function keyTonelaje(){
     keyEspumante();
     variablesRespuesta();
     toneladasConcentrados();
+    keyCianuro();
+
 
     //alert(contenidoPlomo);
     
@@ -701,6 +703,9 @@ function lineasActualesBases(){
     }
 
     recuperacionZincPulpa = (80)*(1-(1/(kZn*txtTiempoResidencia))*(1-Math.exp(-kZn*txtTiempoResidencia)))+efectoDepresoresZinc;
+    if (recuperacionZincPulpa<7) {
+        recuperacionZincPulpa = 7;
+    }
     recuperacionZinc = ((recuperacionZincPulpa/100)*txtAireRecuperado)/(1-recuperacionZincPulpa/100*(1-txtAireRecuperado));
     contenidosZincCabeza = (txtTonelajeDisabled * cabezaZinc)/100;
     contenidosZincConc = contenidosZincCabeza * recuperacionZinc;

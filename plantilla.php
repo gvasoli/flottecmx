@@ -420,7 +420,7 @@ value="15.20"
                    <label for="" class="form-label" >Tonelaje</label>
                    <div class="input-group">
 
-         <input type="text" class="form-control p-1 text-center" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="390" onchange="keyTonelaje()" data-mdb-toggle="tooltip" title="Rango de 320 a 390">
+         <input type="text" class="form-control p-1 text-center" placeholder="t/hr" id="txtTonelaje" name="txtTonelaje" value="320" onchange="keyTonelaje()" data-mdb-toggle="tooltip" title="Rango de 320 a 390">
          <input type="text" class="form-control p-1 text-center" placeholder="t/hr" id="txtTonelajeDisabled" name="txtTonelajeDisabled" disabled value="">
          <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="t/hr" disabled="">
          <input type="text" class="form-control p-1 text-center" placeholder="t/turno" id="txtTonelajeTurnoDisabled" name="txtTonelajeTurnoDisabled" disabled value="0">
@@ -485,7 +485,7 @@ value="15.20"
                <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Aire</label>
                    <div class="input-group">
-         <input type="text" class="form-control p-1 text-center" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 19"value="8">
+         <input type="text" class="form-control p-1 text-center" placeholder="m^3/min" id="txtAire" name="txtAire" onchange="keyAire();" data-mdb-toggle="tooltip" title="Rango de 1 a 19"value="1">
          <input type="text" class="form-control p-1 text-center" placeholder="m^3/min" id="txtAireDisabled" name="txtAireDisabled" value="" disabled="">
          <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="m^3/min" disabled="">
        </div>
@@ -494,7 +494,7 @@ value="15.20"
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Nivel</label>
                    <div class="input-group">
-         <input type="text" class="form-control p-1 text-center" placeholder="-m" id="txtNivel" onchange="keyNivel()" value="-0.15" data-mdb-toggle="tooltip" title="Rango de -0.5 a 0">
+         <input type="text" class="form-control p-1 text-center" placeholder="-m" id="txtNivel" onchange="keyNivel()" value="-0.5" data-mdb-toggle="tooltip" title="Rango de -0.5 a 0">
          <input type="text" class="form-control p-1 text-center" placeholder="-m" id="txtNivelDisabled" name="txtNivelDisabled" disabled="">
          <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="-m" disabled="">
        </div>
@@ -503,7 +503,7 @@ value="15.20"
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Colector</label>
                    <div class="input-group">
-         <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtColectorVC" name="txtColectorVC" onchange="keyColector()" data-mdb-toggle="tooltip" title="Rango de 0 a 1200" value="500">
+         <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtColectorVC" name="txtColectorVC" onchange="keyColector()" data-mdb-toggle="tooltip" title="Rango de 0 a 1200" value="0">
          <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtColectorVCDisabled"
          name="txtColectorVCDisabled" disabled="">
          <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="ml/min" disabled="">
@@ -514,7 +514,7 @@ value="15.20"
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">Espumante</label>
             <div class="input-group">
-              <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtEspumanteVC" name="txtEspumanteVC" value="150" onchange="keyEspumante()" data-mdb-toggle="tooltip" title="Rango de 0 a 240">
+              <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtEspumanteVC" name="txtEspumanteVC" value="0" onchange="keyEspumante()" data-mdb-toggle="tooltip" title="Rango de 0 a 240">
               <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtEspumanteVCDisabled" name="txtEspumanteVCDisabled"disabled="">
               <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="ml/min" disabled="">
             </div>
@@ -523,7 +523,7 @@ value="15.20"
          <div class="col-md-2">
                    <label for="validationCustom02" class="form-label">Sulfato de Zinc</label>
                    <div class="input-group">
-         <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtSulfatoZincVC" name="txtSulfatoZincVC" value="1000" onchange="keySulfato()" data-mdb-toggle="tooltip" title="Rango de 0 a 7000">
+         <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtSulfatoZincVC" name="txtSulfatoZincVC" value="0" onchange="keySulfato()" data-mdb-toggle="tooltip" title="Rango de 0 a 7000">
          <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtSulfatoZincVCDisabled" name="txtSulfatoZincVCDisabled" disabled="">
          <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="ml/min" disabled="">
        </div>
@@ -532,7 +532,7 @@ value="15.20"
         <div class="col-md-2">
           <label for="validationCustom02" class="form-label">Cianuro</label>
             <div class="input-group">
-              <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtCianuroVC" name="txtCianuroVC" value="500" onchange="keyCianuro()" data-mdb-toggle="tooltip" title="Rango de 0 a 900">
+              <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtCianuroVC" name="txtCianuroVC" value="0" onchange="keyCianuro()" data-mdb-toggle="tooltip" title="Rango de 0 a 900">
               <input type="text" class="form-control p-1 text-center" placeholder="ml/min" id="txtCianuroVCDisabled" name="txtCianuroVCDisabled" disabled="">
               <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="ml/min" disabled="">
             </div>
@@ -651,7 +651,7 @@ value="15.20"
                    <label for="validationCustom02" class="form-label">Cianuro</label>
                    <div class="input-group">
          <input type="text" class="form-control p-1 text-center" placeholder="gr/t" id="txtCianuroVR" name="txtCianuroVR" disabled="">
-         <input type="text" class="form-control p-1" placeholder="ppm" id="" name="" value="gr/t" disabled="">
+         <input type="text" class="form-control p-1 text-center" placeholder="ppm" id="" name="" value="gr/t" disabled="">
          
        </div>
 

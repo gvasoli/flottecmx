@@ -589,7 +589,7 @@ function efectoDepresores(){
     efectoCianuroOro = (-15) * (1-Math.exp(-0.09*txtCianuroVR));
     efectoDepresoresOro = efectoZNS04Oro + efectoCianuroOro;
     efectoZNS04Zinc = (-13 ) * (1-Math.exp(-0.055*txtSulfatoZincVR));
-    efectoCianuroZinc = (-6) * (1-Math.exp(-0.12*txtCianuroVR));
+    efectoCianuroZinc = (-15) * (1-Math.exp(-0.1*txtCianuroVR));
     efectoDepresoresZinc = efectoZNS04Zinc + efectoCianuroZinc;
     //alert(efectoCianuroZinc);
     efectoCianuroFierro = (-7) * (1-Math.exp(-0.3*txtCianuroVR));
@@ -624,6 +624,11 @@ function lineasActualesBases(){
     }
 
     recuperacionPlataPulpa = (89.94)*(1-(1/(kAg*txtTiempoResidencia))*(1-Math.exp(-kAg*txtTiempoResidencia)))+efectoDepresoresPlata;
+    
+    if (recuperacionPlataPulpa<13){
+        recuperacionPlataPulpa = 13;
+    }
+
     recuperacionPlata = ((recuperacionPlataPulpa/100)*txtAireRecuperado)/(1-recuperacionPlataPulpa/100*(1-txtAireRecuperado));
     contenidosPlataCabeza = (txtTonelajeDisabled * cabezaPlata)/1000;
     contenidosPlataConc = contenidosPlataCabeza * recuperacionPlata;
@@ -649,6 +654,11 @@ function lineasActualesBases(){
     }
 
     recuperacionOroPulpa = (86)*(1-(1/(kAu*txtTiempoResidencia))*(1-Math.exp(-kAu*txtTiempoResidencia)))+efectoDepresoresOro;
+
+    if (recuperacionOroPulpa<7){
+        recuperacionOroPulpa = 7;
+    }
+
     recuperacionOro = ((recuperacionOroPulpa/100)*txtAireRecuperado)/(1-recuperacionOroPulpa/100*(1-txtAireRecuperado));
     contenidosOroCabeza = (txtTonelajeDisabled * cabezaOro)/1000;
     contenidosOroConc = contenidosOroCabeza * recuperacionOro;

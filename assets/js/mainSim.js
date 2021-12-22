@@ -717,6 +717,12 @@ function lineasActualesBases(){
         recuperacionZincPulpa = 7;
     }
     recuperacionZinc = ((recuperacionZincPulpa/100)*txtAireRecuperado)/(1-recuperacionZincPulpa/100*(1-txtAireRecuperado));
+
+    if (recuperacionZinc<0.0075) {
+        recuperacionZinc = 0.0075;
+    }
+
+
     
     contenidosZincCabeza = (txtTonelajeDisabled * cabezaZinc)/100;
     contenidosZincConc = contenidosZincCabeza * recuperacionZinc;

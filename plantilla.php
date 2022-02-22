@@ -242,17 +242,17 @@
                <form class="row g-3 needs-validation" novalidate>
                <div class="col-md-2">
                    <label for="validationCustom01" class="form-label fs-6">Diametro del agitador</label>
-                   <input type="text" class="form-control" id="txtDiametroAgitador" name="txtDiametroAgitador" required placeholder="m" value="0.6" onchange="keyDiametroAgitador()">
+                   <input type="text" class="form-control" id="txtDiametroAgitador" name="txtDiametroAgitador" required placeholder="m" value="0.6" disabled="" onchange="keyDiametroAgitador()">
 
            </div>
          <div class="col-md-2">
            <label for="validationCustom02" class="form-label">Diametro de la celda</label>
-           <input type="text" class="form-control" id="txtDiametroCelda" name="txtDiametroCelda" required placeholder="m" value="6" onchange="keyDiametroCelda()">
+           <input type="text" class="form-control" id="txtDiametroCelda" name="txtDiametroCelda" required placeholder="m" value="6" onchange="keyDiametroCelda()" disabled="">
 
          </div>
          <div class="col-md-2">
            <label for="txtAlturaCelda" class="form-label">Altura de la celda</label>
-           <input type="text" class="form-control" id="txtAlturaCelda" name="txtAlturaCelda" required placeholder="m" value="7" onchange="keyAlturaCelda()">
+           <input type="text" class="form-control" id="txtAlturaCelda" name="txtAlturaCelda" required placeholder="m" value="7" onchange="keyAlturaCelda()" disabled="">
 
          </div>
          <div class="col-md-2">
@@ -279,7 +279,7 @@
          </div>
          <div class="col-md-2">
            <label for="validationCustom02" class="form-label">Gravedad especifica</label>
-           <input type="text" class="form-control" id="txtGravedadEspecifica" name="txtGravedadEspecifica" required placeholder="kg/l" value="2.8">
+           <input type="text" class="form-control" id="txtGravedadEspecifica" name="txtGravedadEspecifica" required placeholder="kg/l" value="2.8" disabled="">
          </div>
        </form>
       </div>
